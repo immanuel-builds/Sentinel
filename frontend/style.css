@@ -317,6 +317,13 @@ td {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.3s ease;
+}
+
+.anomaly-item.status-reviewed {
+    opacity: 0.7;
+    filter: grayscale(0.5);
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .anomaly-info {
@@ -386,8 +393,24 @@ select {
     color: var(--on-primary);
 }
 
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--outline);
+    color: var(--on-surface-variant);
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 11px;
+}
+
 .btn:hover {
     opacity: 0.9;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .badge {
@@ -408,6 +431,12 @@ select {
     background: rgba(16, 185, 129, 0.1);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-warning {
+    background: rgba(255, 180, 171, 0.1);
+    color: #ffb4ab;
+    border: 1px solid rgba(255, 180, 171, 0.3);
 }
 
 .preview-card {

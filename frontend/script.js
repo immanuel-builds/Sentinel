@@ -25,6 +25,37 @@ function showSection(sectionName) {
     });
 }
 
+async function updateAnomalyStatus(anomalyId, currentStatus, button) {
+    const newStatus = currentStatus === 'reviewed' ? 'pending' : 'reviewed';
+
+    // Disable button during request
+    button.disabled = true;
+    button.innerText = 'Updating...';
+
+    try {
+        const response = await fetch(`${API_BASE_URL}/anomalies/${anomalyId}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ status: newStatus }),
+        });
+
+        if (response.ok) {
+            // Re-fetch data to update UI
+            await fetchData();
+        } else {
+            console.error('Failed to update anomaly status');
+            button.disabled = false;
+            button.innerText = currentStatus === 'reviewed' ? 'Mark as Pending' : 'Mark as Reviewed';
+        }
+    } catch (error) {
+        console.error('Error updating anomaly status:', error);
+        button.disabled = false;
+        button.innerText = currentStatus === 'reviewed' ? 'Mark as Pending' : 'Mark as Reviewed';
+    }
+}
+
 async function fetchData() {
     try {
         let updateSuccessful = false;
@@ -75,7 +106,10 @@ async function fetchData() {
 
             anomalies.forEach(anomaly => {
                 const item = document.createElement('div');
-                item.className = 'anomaly-item';
+                const status = (anomaly.status || 'pending').toLowerCase();
+                const anomalyId = anomaly.id || anomaly.timestamp; // Fallback to timestamp if ID missing
+
+                item.className = `anomaly-item ${status === 'reviewed' ? 'status-reviewed' : ''}`;
 
                 // Risk level styling - check both 'risk' and 'risk_level' fields
                 const riskRaw = anomaly.risk || anomaly.risk_level || 'Low';
@@ -99,6 +133,9 @@ async function fetchData() {
                 };
                 const icon = iconMap[risk] || 'warning';
 
+                const statusBadgeClass = status === 'reviewed' ? 'badge-success' : 'badge-warning';
+                const actionText = status === 'reviewed' ? 'Mark as Pending' : 'Mark as Reviewed';
+
                 item.innerHTML = `
                     <div class="anomaly-info">
                         <div class="anomaly-icon" style="${risk === 'low' || risk === 'resolved' ? 'background: rgba(16, 185, 129, 0.1); color: #10b981;' : ''}">
@@ -107,9 +144,15 @@ async function fetchData() {
                         <div>
                             <p style="font-weight: 600;">${anomaly.type || 'Anomaly detected'}</p>
                             <p style="font-size: 12px; color: var(--on-surface-variant);">${anomaly.reason || 'N/A'} • ${anomaly.timestamp || ''}</p>
+                            <div style="margin-top: 8px; display: flex; gap: 8px; align-items: center;">
+                                <span class="badge ${statusBadgeClass}">${status}</span>
+                                <span class="badge ${risk === 'critical' || risk === 'high' ? 'badge-error' : (risk === 'low' || risk === 'resolved' ? 'badge-success' : '')}">${riskRaw}</span>
+                            </div>
                         </div>
                     </div>
-                    <span class="badge ${risk === 'critical' || risk === 'high' ? 'badge-error' : (risk === 'low' || risk === 'resolved' ? 'badge-success' : '')}">${riskRaw}</span>
+                    <button class="btn btn-outline btn-sm" onclick="updateAnomalyStatus('${anomalyId}', '${status}', this)">
+                        ${actionText}
+                    </button>
                 `;
                 anomalyContainer.appendChild(item);
             });

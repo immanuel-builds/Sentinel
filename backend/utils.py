@@ -23,7 +23,9 @@ def save_json(file_path: str, data: Any) -> bool:
     """Safely save data to a JSON file using a temporary file to avoid corruption."""
     try:
         # Ensure directory exists
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        dir_name = os.path.dirname(file_path)
+        if dir_name:
+            os.makedirs(dir_name, exist_ok=True)
 
         temp_file = file_path + ".tmp"
         with open(temp_file, "w") as f:

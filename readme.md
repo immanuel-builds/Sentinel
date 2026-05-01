@@ -62,7 +62,7 @@ Open `frontend/index.html` in your browser.
 
 ## Folder Explanations
 
-- **frontend/**: The user interface built with vanilla HTML/CSS/JS. Automatically refreshes every 7 seconds.
+- **frontend/**: The user interface built with vanilla HTML/CSS/JS. Supports real-time monitoring with auto-refresh and interactive anomaly management.
 - **backend/**: Contains the FastAPI server, the analysis engine, and common utilities.
 - **collector/**: Scripts to gather raw system activity like running processes and CPU usage.
 - **data/**: Central storage for logs and detected anomalies in JSON format.

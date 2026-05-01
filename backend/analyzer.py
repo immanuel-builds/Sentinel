@@ -1,5 +1,6 @@
 import os
 import sys
+import hashlib
 from datetime import datetime
 
 # Path adjustment for when running as a standalone script
@@ -9,14 +10,22 @@ if __name__ == "__main__":
 else:
     from .utils import load_json, save_json
 
+def generate_id(timestamp, anomaly_type, process):
+    """Generate a stable hash ID for an anomaly."""
+    unique_str = f"{timestamp}-{anomaly_type}-{process}"
+    return hashlib.md5(unique_str.encode()).hexdigest()
+
 def analyze():
     """
     Reads activity_log.json, builds a behavioral baseline,
-    and detects anomalies based on process novelty, active hours, and CPU usage.
+    and detects anomalies while preserving user-set statuses.
     """
     data_dir = "data"
     input_file = os.path.join(data_dir, 'activity_log.json')
     output_file = os.path.join(data_dir, 'anomalies.json')
+
+    # Load existing anomalies to preserve statuses
+    existing_anomalies = {a['id']: a.get('status', 'pending') for a in load_json(output_file, []) if 'id' in a}
 
     # 1. Read the file "activity_log.json"
     data = load_json(input_file, [])
@@ -25,7 +34,7 @@ def analyze():
         save_json(output_file, [])
         return
 
-    # Sort entries by timestamp to ensure chronological analysis
+    # Sort entries by timestamp
     try:
         data.sort(key=lambda x: x.get('timestamp', ''))
     except Exception:
@@ -51,7 +60,6 @@ def analyze():
     else:
         min_active_hour, max_active_hour = 0, 23
 
-    # Calculate global average CPU usage
     all_cpu = [entry.get('cpu', 0) for entry in data if isinstance(entry.get('cpu'), (int, float))]
     avg_cpu = sum(all_cpu) / len(all_cpu) if all_cpu else 0
 
@@ -76,12 +84,16 @@ def analyze():
             if proc and proc not in processes_seen_so_far:
                 risk = "low" if is_normal_hour else "medium"
                 hour_context = "during normal hours" if is_normal_hour else f"outside normal hours ({min_active_hour}-{max_active_hour})"
+
+                aid = generate_id(timestamp, "new_process", proc)
                 anomalies.append({
+                    "id": aid,
                     "timestamp": timestamp,
                     "type": "new_process",
                     "process": proc,
                     "reason": f"New process '{proc}' detected {hour_context}. This process was not observed in the baseline period.",
-                    "risk": risk
+                    "risk": risk,
+                    "status": existing_anomalies.get(aid, "pending")
                 })
                 processes_seen_so_far.add(proc)
 
@@ -91,38 +103,36 @@ def analyze():
             dist_max = abs(current_hour - max_active_hour)
             distance = min(dist_min, dist_max, 24 - dist_min, 24 - dist_max)
 
-            if distance > 2:
-                risk = "high"
-                severity = "significant"
-            else:
-                risk = "medium"
-                severity = "slight"
+            risk = "high" if distance > 2 else "medium"
+            severity = "significant" if distance > 2 else "slight"
 
+            aid = generate_id(timestamp, "time_anomaly", "None")
             anomalies.append({
+                "id": aid,
                 "timestamp": timestamp,
                 "type": "time_anomaly",
                 "process": None,
                 "reason": f"{severity.capitalize()} time deviation: Activity at hour {current_hour} is outside the typical {min_active_hour}-{max_active_hour} range.",
-                "risk": risk
+                "risk": risk,
+                "status": existing_anomalies.get(aid, "pending")
             })
 
         # C. CPU Spike Detection
         if cpu > avg_cpu * 2 and cpu > 5:
             multiplier = cpu / avg_cpu if avg_cpu > 0 else 0
-            if multiplier >= 3:
-                risk = "high"
-            else:
-                risk = "medium"
+            risk = "high" if multiplier >= 3 else "medium"
 
+            aid = generate_id(timestamp, "cpu_spike", "System Wide")
             anomalies.append({
+                "id": aid,
                 "timestamp": timestamp,
                 "type": "cpu_spike",
                 "process": "System Wide",
                 "reason": f"CPU usage spike: {cpu:.1f}% is {multiplier:.1f}x the session average of {avg_cpu:.1f}%.",
-                "risk": risk
+                "risk": risk,
+                "status": existing_anomalies.get(aid, "pending")
             })
 
-    # 4. Output: Write all detected anomalies to a file named "anomalies.json"
     save_json(output_file, anomalies)
 
 if __name__ == "__main__":
