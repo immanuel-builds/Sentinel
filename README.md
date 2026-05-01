@@ -40,29 +40,78 @@ Sentinel is a minimal, rule-based security monitoring system designed to track l
 
 ## Setup Instructions
 
-### 1. Install dependencies
-Ensure you have Python 3.8+ installed, then run:
+### 1. Create Virtual Environment
+
+**Windows:**
+```bash
+python -m venv venv
+```
+
+**Mac/Linux:**
+```bash
+python3 -m venv venv
+```
+
+---
+
+### 2. Activate Virtual Environment
+
+**Windows:**
+```bash
+venv\Scripts\activate
+```
+
+**Mac/Linux:**
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Run backend
+---
+
+### 4. Run the Backend
 Start the API server to serve logs and anomalies:
 ```bash
 uvicorn backend.main:app --reload
 ```
 
-### 3. Run collector/analyzer loop
-Start the automated data collection and analysis pipeline in a separate terminal:
+---
+
+### 5. Run the Monitoring System
+Start the automated data collection and analysis pipeline in a new terminal:
+
+**Windows:**
 ```bash
 python runner.py
 ```
 
-### 4. Open frontend
-Simply open the dashboard in your web browser:
+**Mac/Linux:**
+```bash
+python3 runner.py
+```
+
+---
+
+### 6. Open the Dashboard
+Open the dashboard in your web browser:
 ```text
 frontend/index.html
 ```
+
+## Quick Start
+
+1.  **Setup environment** (follow steps 1-3 above).
+2.  **Run the automated startup script**:
+    *   **Windows**: Double-click `start.bat`.
+    *   **Linux/Mac**: Run `./start.sh`.
+
+This will automatically start the backend server, begin data collection, and open the interactive dashboard in your default browser.
 
 ## Example Anomalies
 
