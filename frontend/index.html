@@ -71,7 +71,6 @@
                 <div class="stat-card">
                     <div class="stat-header">
                         <span class="material-symbols-outlined" style="color: var(--primary)">sensors</span>
-                        <span style="font-size: 11px; color: #10b981">+4.2%</span>
                     </div>
                     <p class="stat-label">Total Events</p>
                     <p class="stat-value" id="stat-total-events">0</p>
@@ -79,7 +78,6 @@
                 <div class="stat-card">
                     <div class="stat-header">
                         <span class="material-symbols-outlined" style="color: var(--error)">warning</span>
-                        <span style="font-size: 11px; color: var(--error)">Attention</span>
                     </div>
                     <p class="stat-label">Anomalies Detected</p>
                     <p class="stat-value" id="stat-anomalies-detected">0</p>
@@ -87,7 +85,6 @@
                 <div class="stat-card">
                     <div class="stat-header">
                         <span class="material-symbols-outlined" style="color: var(--secondary)">memory</span>
-                        <span style="font-size: 11px; color: var(--on-surface-variant)">Stable</span>
                     </div>
                     <p class="stat-label">Active Processes</p>
                     <p class="stat-value" id="stat-active-processes">0</p>
@@ -95,8 +92,9 @@
             </div>
             <div class="grid-main">
                 <div class="card">
-                    <h3 class="card-title">Recent Event Metrics</h3>
-                    <div style="height: 200px; display: flex; align-items: flex-end; gap: 8px; padding-bottom: 20px;">
+                    <h3 class="card-title">System Activity Timeline</h3>
+                    <p style="font-size: 12px; color: var(--on-surface-variant); margin-bottom: 16px;">Visual representation of recent event distribution (Mock data).</p>
+                    <div style="height: 150px; display: flex; align-items: flex-end; gap: 8px; padding-bottom: 20px;">
                         <!-- Plain representation of activity -->
                         <div style="flex: 1; height: 40%; background: #2d3039;"></div>
                         <div style="flex: 1; height: 65%; background: #2d3039;"></div>
@@ -114,39 +112,13 @@
                     </div>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 24px;">
-                    <div class="card">
-                        <h3 class="card-title">Threat Vectors</h3>
-                        <div style="display: flex; flex-direction: column; gap: 16px;">
-                            <div>
-                                <div
-                                    style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
-                                    <span>External Access</span>
-                                    <span>65%</span>
-                                </div>
-                                <div style="height: 4px; background: #2d3039; border-radius: 2px;">
-                                    <div
-                                        style="height: 100%; width: 65%; background: var(--error); border-radius: 2px;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div
-                                    style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
-                                    <span>Protocol Mismatch</span>
-                                    <span>24%</span>
-                                </div>
-                                <div style="height: 4px; background: #2d3039; border-radius: 2px;">
-                                    <div
-                                        style="height: 100%; width: 24%; background: var(--secondary); border-radius: 2px;">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="card" id="system-overview-card">
+                        <h3 class="card-title">Detection Methodology</h3>
+                        <div style="display: flex; flex-direction: column; gap: 12px; font-size: 13px; color: var(--on-surface-variant);">
+                            <p><strong>Rule-Based Analysis:</strong> System compares current behavior against a temporal baseline and session-wide CPU averages.</p>
+                            <p><strong>Tracked Metrics:</strong> Process execution, CPU utilization, and timestamp regularity.</p>
+                            <p><strong>Limitations:</strong> This is a heuristic detection system, not a signature-based antivirus or advanced ML engine.</p>
                         </div>
-                    </div>
-                    <div class="preview-card">
-                        <h3>Behavior Engine (Preview)</h3>
-                        <p style="font-size: 13px; opacity: 0.9;">Heuristic tracking enabled for sub-system pattern
-                            matching.</p>
                     </div>
                 </div>
             </div>

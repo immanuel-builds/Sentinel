@@ -1,6 +1,6 @@
-# Cybersecurity Behavior Tracking System
+# Rule-Based Behavior Tracking System
 
-A minimal, proactive security monitoring system that tracks system activity, detects anomalies (CPU spikes, off-hours activity), and provides an interactive dashboard.
+A minimal security monitoring system that tracks system activity, detects anomalies through rule-based heuristics (CPU spikes, off-hours activity), and provides an interactive dashboard.
 
 ## Project Structure
 
@@ -61,8 +61,14 @@ Each anomaly entry in `data/anomalies.json` follows this schema:
 
 ## Core Features
 
-- **Heuristic Analysis**: Detects CPU spikes relative to session averages and identifies off-hours activity based on automated baselining.
+- **Rule-Based Analysis**: Detects CPU spikes relative to session averages and identifies off-hours activity based on automated temporal baselining.
 - **State Management**: Persistent anomaly statuses that survive system restarts and analysis cycles.
 - **Real-time Visualization**: Dashboard auto-refreshes every 7 seconds to display the latest system state.
 - **Client-Side Filtering**: Powerful search and status filters for both logs and anomalies. Filtering happens instantly in the browser without additional backend requests.
 - **Data Integrity**: Uses atomic JSON writes with temporary files to prevent data corruption during simultaneous read/write operations.
+
+## Limitations
+
+- **No Signature Matching**: This system does not use a database of known malware signatures (antivirus).
+- **Rule-Based Only**: It relies on fixed heuristics (CPU usage, time of day) rather than complex machine learning models.
+- **Local Scope**: Monitoring is limited to the local machine's process list and CPU utilization.
