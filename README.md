@@ -22,6 +22,13 @@ Sentinel is a minimal, rule-based security monitoring system designed to track l
 - **CPU Deviation**: Flags usage that exceeds the mean by 2 or 3 standard deviations (Z-score analysis).
 - **Rare Process Detection**: Identifies processes based on their occurrence frequency across all captured logs.
 
+### 3. Machine Learning Detection
+- **Isolation Forest**: Sentinel uses an unsupervised Isolation Forest model to detect global outliers in system behavior.
+- **Pattern Matching**: It identifies unusual combinations of CPU usage and activity time that might not be caught by simple thresholds.
+- **Explainability**: While powered by ML, results are interpreted and presented as explainable anomalies focusing on resource/time patterns.
+
+"This ML layer complements rule-based and statistical detection. All results remain explainable."
+
 ## Architecture
 - **Collector**: A background utility using `psutil` to sample system processes and CPU usage at regular intervals.
 - **Analyzer**: A heuristic-driven engine that processes raw logs, builds behavioral baselines, and generates structured anomalies.

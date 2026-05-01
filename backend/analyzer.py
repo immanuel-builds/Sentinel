@@ -4,6 +4,7 @@ import hashlib
 from datetime import datetime
 import pandas as pd
 import numpy as np
+from sklearn.ensemble import IsolationForest
 
 # Path adjustment for when running as a standalone script
 if __name__ == "__main__":
@@ -19,7 +20,10 @@ def generate_id(timestamp, anomaly_type, process):
 
 def analyze():
     """
-    Hybrid Anomaly Detection: Combines Rule-Based logic with Statistical Analysis.
+    Multi-Layer Anomaly Detection Engine:
+    1. Rule-Based Detection
+    2. Statistical Detection (Pandas/Numpy)
+    3. Machine Learning Detection (Isolation Forest)
     """
     data_dir = "data"
     input_file = os.path.join(data_dir, 'activity_log.json')
@@ -35,7 +39,7 @@ def analyze():
         save_json(output_file, [])
         return
 
-    # --- PART 1: RULE-BASED DETECTION (Preserved Exactly) ---
+    # --- PART 1: RULE-BASED DETECTION ---
     rule_anomalies = []
 
     # Sort entries by timestamp for baseline consistency
@@ -134,7 +138,7 @@ def analyze():
                 "status": existing_anomalies_map.get(aid, {}).get('status', 'pending')
             })
 
-    # --- PART 2: STATISTICAL DETECTION (New) ---
+    # --- PART 2: STATISTICAL DETECTION ---
     stat_anomalies = []
     df = pd.DataFrame(raw_data)
 
@@ -163,7 +167,6 @@ def analyze():
                     })
 
         # 2. Process Frequency Analysis
-        # Flatten processes list
         if 'processes' in df.columns:
             process_series = df.explode('processes')['processes']
             total_logs = len(df)
@@ -174,28 +177,72 @@ def analyze():
                 for proc, count in process_counts.items():
                     freq_ratio = count / total_logs
                     if freq_ratio < 0.05:
-                        # Find the first occurrence for the anomaly timestamp
-                        first_occurrence = df[df['processes'].apply(lambda x: proc in x if isinstance(x, list) else False)].iloc[0]
+                        # Find the first occurrence
+                        subset = df[df['processes'].apply(lambda x: proc in x if isinstance(x, list) else False)]
+                        if not subset.empty:
+                            first_occurrence = subset.iloc[0]
+                            aid = generate_id(first_occurrence['timestamp'], "statistical_anomaly", proc)
+                            stat_anomalies.append({
+                                "id": aid,
+                                "timestamp": first_occurrence['timestamp'],
+                                "type": "statistical_anomaly",
+                                "process": proc,
+                                "reason": f"Process '{proc}' appears in only {freq_ratio*100:.1f}% of logs (rare behavior)",
+                                "risk": "medium",
+                                "status": existing_anomalies_map.get(aid, {}).get('status', 'pending')
+                            })
 
-                        aid = generate_id(first_occurrence['timestamp'], "statistical_anomaly", proc)
-                        stat_anomalies.append({
-                            "id": aid,
-                            "timestamp": first_occurrence['timestamp'],
-                            "type": "statistical_anomaly",
-                            "process": proc,
-                            "reason": f"Process '{proc}' appears in only {freq_ratio*100:.1f}% of logs (rare behavior)",
-                            "risk": "medium",
-                            "status": existing_anomalies_map.get(aid, {}).get('status', 'pending')
-                        })
+    # --- PART 3: MACHINE LEARNING DETECTION (Isolation Forest) ---
+    ml_anomalies = []
+    if len(df) >= 20:
+        # Data Preparation
+        df['hour'] = pd.to_datetime(df['timestamp']).dt.hour
+        X = df[['cpu', 'hour']].values
 
-    # --- PART 3: MERGING & DEDUPLICATION ---
-    all_new_anomalies = rule_anomalies + stat_anomalies
+        # Model Configuration
+        # Contamination=0.05 assumes ~5% outliers
+        model = IsolationForest(contamination=0.05, random_state=42)
+        model.fit(X)
+        predictions = model.predict(X)
+
+        for i, pred in enumerate(predictions):
+            if pred == -1: # Anomaly detected
+                row = df.iloc[i]
+                timestamp = row['timestamp']
+                cpu = row['cpu']
+
+                # Check for dominant process in this entry
+                procs = row.get('processes', [])
+                dominant_proc = procs[0] if procs else "System Wide"
+
+                aid = generate_id(timestamp, "ml_anomaly", f"ml_{i}")
+
+                # Assign risk: higher if CPU is also high
+                risk = "medium"
+                if cpu > df['cpu'].mean() + df['cpu'].std():
+                    risk = "high"
+
+                ml_anomalies.append({
+                    "id": aid,
+                    "timestamp": timestamp,
+                    "type": "ml_anomaly",
+                    "process": dominant_proc,
+                    "reason": "Unusual behavior detected based on CPU usage and activity time pattern (Isolation Forest)",
+                    "risk": risk,
+                    "status": existing_anomalies_map.get(aid, {}).get('status', 'pending')
+                })
+
+    # --- PART 4: MERGING & DEDUPLICATION ---
+    # Merge existing (reviewed) + all new types
+    all_new_anomalies = rule_anomalies + stat_anomalies + ml_anomalies
 
     final_anomalies = []
     seen_ids = set()
 
     for anomaly in all_new_anomalies:
         aid = anomaly['id']
+
+        # Simple deduplication: allow multiple types for same timestamp but only one of each unique ID
         if aid not in seen_ids:
             final_anomalies.append(anomaly)
             seen_ids.add(aid)
