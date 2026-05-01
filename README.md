@@ -4,11 +4,23 @@
 Sentinel is a minimal, rule-based security monitoring system designed to track local system behavior and flag irregularities. It provides a lightweight alternative to heavy monitoring suites, focusing on process execution patterns and resource utilization anomalies.
 
 ## Features
+- **Hybrid Detection Engine**: Combines deterministic rules with statistical modeling for improved anomaly detection.
 - **Behavioral Baselines**: Automatically establishes a baseline of "normal" activity hours to detect off-hours execution.
-- **CPU Spike Detection**: Monitors system-wide CPU usage and flags spikes that deviate significantly from the session average.
-- **Process Tracking**: Identifies and alerts on the appearance of new processes not observed during the initial baseline period.
+- **Statistical CPU Monitoring**: Uses mean and standard deviation to identify anomalous resource usage.
+- **Process Frequency Analysis**: Detects rare processes that appear in less than 5% of logs.
 - **Interactive Dashboard**: A real-time web interface for monitoring statistics, reviewing detailed logs, and managing anomaly states (Pending vs. Reviewed).
 - **Persistent Management**: User-reviewed anomaly statuses are preserved across analysis cycles using stable MD5-based identifiers.
+
+## Detection Methods
+
+### 1. Rule-Based Detection
+- **New Process Detection**: Flags any process not observed in the initial baseline period.
+- **Time Anomalies**: Identifies system activity outside of established normal hours.
+- **CPU Spike Thresholds**: Uses fixed multipliers against the session average.
+
+### 2. Statistical Detection
+- **CPU Deviation**: Flags usage that exceeds the mean by 2 or 3 standard deviations (Z-score analysis).
+- **Rare Process Detection**: Identifies processes based on their occurrence frequency across all captured logs.
 
 ## Architecture
 - **Collector**: A background utility using `psutil` to sample system processes and CPU usage at regular intervals.

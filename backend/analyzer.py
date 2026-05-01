@@ -2,6 +2,8 @@ import os
 import sys
 import hashlib
 from datetime import datetime
+import pandas as pd
+import numpy as np
 
 # Path adjustment for when running as a standalone script
 if __name__ == "__main__":
@@ -17,34 +19,33 @@ def generate_id(timestamp, anomaly_type, process):
 
 def analyze():
     """
-    Reads activity_log.json, builds a behavioral baseline,
-    and detects anomalies while preserving user-set statuses.
+    Hybrid Anomaly Detection: Combines Rule-Based logic with Statistical Analysis.
     """
     data_dir = "data"
     input_file = os.path.join(data_dir, 'activity_log.json')
     output_file = os.path.join(data_dir, 'anomalies.json')
 
-    # Load existing anomalies to preserve statuses
-    # This ensures that if a user marked an anomaly as 'reviewed', it stays 'reviewed'
-    existing_anomalies = {a['id']: a.get('status', 'pending') for a in load_json(output_file, []) if 'id' in a}
+    # Load existing anomalies to preserve statuses and IDs
+    existing_anomalies_data = load_json(output_file, [])
+    existing_anomalies_map = {a['id']: a for a in existing_anomalies_data if 'id' in a}
 
     # 1. Read the raw activity logs
-    data = load_json(input_file, [])
-
-    if not isinstance(data, list) or not data:
+    raw_data = load_json(input_file, [])
+    if not isinstance(raw_data, list) or not raw_data:
         save_json(output_file, [])
         return
 
-    # Sort entries by timestamp
+    # --- PART 1: RULE-BASED DETECTION (Preserved Exactly) ---
+    rule_anomalies = []
+
+    # Sort entries by timestamp for baseline consistency
     try:
-        data.sort(key=lambda x: x.get('timestamp', ''))
+        raw_data.sort(key=lambda x: x.get('timestamp', ''))
     except Exception:
         pass
 
-    # 2. Build a behavioral baseline
-    # We use the first portion of the logs to define 'normal' hours of activity
-    baseline_size = min(10, max(1, len(data) // 2))
-    baseline_sample = data[:baseline_size]
+    baseline_size = min(10, max(1, len(raw_data) // 2))
+    baseline_sample = raw_data[:baseline_size]
 
     baseline_hours = []
     for entry in baseline_sample:
@@ -62,14 +63,12 @@ def analyze():
     else:
         min_active_hour, max_active_hour = 0, 23
 
-    all_cpu = [entry.get('cpu', 0) for entry in data if isinstance(entry.get('cpu'), (int, float))]
-    avg_cpu = sum(all_cpu) / len(all_cpu) if all_cpu else 0
+    all_cpu_raw = [entry.get('cpu', 0) for entry in raw_data if isinstance(entry.get('cpu'), (int, float))]
+    avg_cpu_raw = sum(all_cpu_raw) / len(all_cpu_raw) if all_cpu_raw else 0
 
-    # 3. Detect anomalies
-    anomalies = []
     processes_seen_so_far = set()
 
-    for entry in data:
+    for entry in raw_data:
         timestamp = entry.get('timestamp')
         processes = entry.get('processes', [])
         cpu = entry.get('cpu', 0)
@@ -88,14 +87,14 @@ def analyze():
                 hour_context = "during normal hours" if is_normal_hour else f"outside normal hours ({min_active_hour}-{max_active_hour})"
 
                 aid = generate_id(timestamp, "new_process", proc)
-                anomalies.append({
+                rule_anomalies.append({
                     "id": aid,
                     "timestamp": timestamp,
                     "type": "new_process",
                     "process": proc,
                     "reason": f"New process '{proc}' detected {hour_context}. This process was not observed in the baseline period.",
                     "risk": risk,
-                    "status": existing_anomalies.get(aid, "pending")
+                    "status": existing_anomalies_map.get(aid, {}).get('status', 'pending')
                 })
                 processes_seen_so_far.add(proc)
 
@@ -109,34 +108,99 @@ def analyze():
             severity = "significant" if distance > 2 else "slight"
 
             aid = generate_id(timestamp, "time_anomaly", "None")
-            anomalies.append({
+            rule_anomalies.append({
                 "id": aid,
                 "timestamp": timestamp,
                 "type": "time_anomaly",
                 "process": None,
                 "reason": f"{severity.capitalize()} time deviation: Activity at hour {current_hour} is outside the typical {min_active_hour}-{max_active_hour} range.",
                 "risk": risk,
-                "status": existing_anomalies.get(aid, "pending")
+                "status": existing_anomalies_map.get(aid, {}).get('status', 'pending')
             })
 
-        # C. CPU Spike Detection
-        # Detects spikes that are significantly higher than the session average
-        if cpu > avg_cpu * 2 and cpu > 5:
-            multiplier = cpu / avg_cpu if avg_cpu > 0 else 0
+        # C. CPU Spike Detection (Rule-Based)
+        if cpu > avg_cpu_raw * 2 and cpu > 5:
+            multiplier = cpu / avg_cpu_raw if avg_cpu_raw > 0 else 0
             risk = "high" if multiplier >= 3 else "medium"
 
             aid = generate_id(timestamp, "cpu_spike", "System Wide")
-            anomalies.append({
+            rule_anomalies.append({
                 "id": aid,
                 "timestamp": timestamp,
                 "type": "cpu_spike",
                 "process": "System Wide",
-                "reason": f"CPU usage spike: {cpu:.1f}% is {multiplier:.1f}x the session average of {avg_cpu:.1f}%.",
+                "reason": f"CPU usage spike: {cpu:.1f}% is {multiplier:.1f}x the session average of {avg_cpu_raw:.1f}%.",
                 "risk": risk,
-                "status": existing_anomalies.get(aid, "pending")
+                "status": existing_anomalies_map.get(aid, {}).get('status', 'pending')
             })
 
-    save_json(output_file, anomalies)
+    # --- PART 2: STATISTICAL DETECTION (New) ---
+    stat_anomalies = []
+    df = pd.DataFrame(raw_data)
+
+    if not df.empty and 'cpu' in df.columns:
+        # 1. CPU Statistical Baseline
+        cpu_mean = df['cpu'].mean()
+        cpu_std = df['cpu'].std()
+
+        if not pd.isna(cpu_std) and cpu_std > 0:
+            moderate_threshold = cpu_mean + (2 * cpu_std)
+            severe_threshold = cpu_mean + (3 * cpu_std)
+
+            for _, row in df.iterrows():
+                cpu_val = row['cpu']
+                if cpu_val > moderate_threshold:
+                    risk = "high" if cpu_val > severe_threshold else "medium"
+                    aid = generate_id(row['timestamp'], "statistical_anomaly", "CPU_Statistical")
+                    stat_anomalies.append({
+                        "id": aid,
+                        "timestamp": row['timestamp'],
+                        "type": "statistical_anomaly",
+                        "process": "System Wide",
+                        "reason": f"CPU usage {cpu_val:.1f}% exceeds threshold (mean {cpu_mean:.1f}%, std {cpu_std:.1f}%)",
+                        "risk": risk,
+                        "status": existing_anomalies_map.get(aid, {}).get('status', 'pending')
+                    })
+
+        # 2. Process Frequency Analysis
+        # Flatten processes list
+        if 'processes' in df.columns:
+            process_series = df.explode('processes')['processes']
+            total_logs = len(df)
+
+            if total_logs > 0:
+                process_counts = process_series.value_counts()
+
+                for proc, count in process_counts.items():
+                    freq_ratio = count / total_logs
+                    if freq_ratio < 0.05:
+                        # Find the first occurrence for the anomaly timestamp
+                        first_occurrence = df[df['processes'].apply(lambda x: proc in x if isinstance(x, list) else False)].iloc[0]
+
+                        aid = generate_id(first_occurrence['timestamp'], "statistical_anomaly", proc)
+                        stat_anomalies.append({
+                            "id": aid,
+                            "timestamp": first_occurrence['timestamp'],
+                            "type": "statistical_anomaly",
+                            "process": proc,
+                            "reason": f"Process '{proc}' appears in only {freq_ratio*100:.1f}% of logs (rare behavior)",
+                            "risk": "medium",
+                            "status": existing_anomalies_map.get(aid, {}).get('status', 'pending')
+                        })
+
+    # --- PART 3: MERGING & DEDUPLICATION ---
+    all_new_anomalies = rule_anomalies + stat_anomalies
+
+    final_anomalies = []
+    seen_ids = set()
+
+    for anomaly in all_new_anomalies:
+        aid = anomaly['id']
+        if aid not in seen_ids:
+            final_anomalies.append(anomaly)
+            seen_ids.add(aid)
+
+    save_json(output_file, final_anomalies)
 
 if __name__ == "__main__":
     analyze()
