@@ -75,8 +75,10 @@ async function fetchData() {
                 const item = document.createElement('div');
                 item.className = 'anomaly-item';
 
-                // Risk level styling
-                const risk = (anomaly.risk_level || 'Low').toLowerCase();
+                // Risk level styling - check both 'risk' and 'risk_level' fields
+                const riskRaw = anomaly.risk || anomaly.risk_level || 'Low';
+                const risk = riskRaw.toLowerCase();
+
                 if (risk === 'critical' || risk === 'high') {
                     item.style.borderLeftColor = 'var(--error)';
                 } else if (risk === 'warning' || risk === 'medium') {
@@ -105,7 +107,7 @@ async function fetchData() {
                             <p style="font-size: 12px; color: var(--on-surface-variant);">${anomaly.reason || 'N/A'} • ${anomaly.timestamp || ''}</p>
                         </div>
                     </div>
-                    <span class="badge ${risk === 'critical' || risk === 'high' ? 'badge-error' : (risk === 'low' || risk === 'resolved' ? 'badge-success' : '')}">${anomaly.risk_level || 'Low'}</span>
+                    <span class="badge ${risk === 'critical' || risk === 'high' ? 'badge-error' : (risk === 'low' || risk === 'resolved' ? 'badge-success' : '')}">${riskRaw}</span>
                 `;
                 anomalyContainer.appendChild(item);
             });
