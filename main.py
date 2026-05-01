@@ -54,9 +54,14 @@ def get_summary():
 
     unique_processes = set()
     for entry in logs:
+        # Handle list of processes
         processes = entry.get("processes", [])
         if isinstance(processes, list):
             unique_processes.update(processes)
+        # Handle single process field
+        process = entry.get("process")
+        if process:
+            unique_processes.add(process)
 
     return {
         "total_events": len(logs),

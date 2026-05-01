@@ -770,6 +770,804 @@
         "risk": "medium"
     },
     {
+        "timestamp": "2026-05-01T01:45:07.258777",
+        "type": "new_process",
+        "process": "kworker/0:2-rcu_gp",
+        "reason": "Process 'kworker/0:2-rcu_gp' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T01:47:57.392605",
+        "type": "new_process",
+        "process": "kworker/1:0-rcu_gp",
+        "reason": "Process 'kworker/1:0-rcu_gp' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T01:48:11.144821",
+        "type": "new_process",
+        "process": "head",
+        "reason": "Process 'head' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T01:49:54.523563",
+        "type": "new_process",
+        "process": "kworker/0:2-kacpi_notify",
+        "reason": "Process 'kworker/0:2-kacpi_notify' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:03.465740",
+        "type": "new_process",
+        "process": "kworker/1:1-mm_percpu_wq",
+        "reason": "Process 'kworker/1:1-mm_percpu_wq' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:03.465740",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:04.891374",
+        "type": "new_process",
+        "process": "kworker/1:1-events",
+        "reason": "Process 'kworker/1:1-events' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:04.891374",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:05.953540",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:09.908192",
+        "type": "new_process",
+        "process": "kworker/3:0-mm_percpu_wq",
+        "reason": "Process 'kworker/3:0-mm_percpu_wq' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:09.908192",
+        "type": "new_process",
+        "process": "kworker/3:1",
+        "reason": "Process 'kworker/3:1' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:09.908192",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:11.318887",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:12.051109",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:16.709530",
+        "type": "new_process",
+        "process": "kworker/1:1-events_power_efficient",
+        "reason": "Process 'kworker/1:1-events_power_efficient' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:16.709530",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:17.630020",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:18.295276",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:22.830813",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:23.717184",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:24.380621",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:28.926369",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:29.808956",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:30.485541",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:35.024461",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:35.891735",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:36.570258",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:41.127281",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:41.979191",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:42.658217",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:47.223769",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:48.066318",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:48.743224",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:53.326257",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:54.150889",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:54.829664",
+        "type": "new_process",
+        "process": "kworker/1:1-virtio_vsock",
+        "reason": "Process 'kworker/1:1-virtio_vsock' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:54.829664",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:48:59.442948",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:01.045552",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:02.041660",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:05.715313",
+        "type": "new_process",
+        "process": "cat",
+        "reason": "Process 'cat' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:05.715313",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:07.150557",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:08.133836",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:11.816275",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:13.242881",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:14.218615",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:17.918499",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:19.333083",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:20.303728",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:24.006959",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:25.419394",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:26.398502",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:30.100771",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:31.508046",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:32.541127",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:36.276220",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:37.665145",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:38.642301",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:42.369869",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:43.793338",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:44.737940",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:48.539239",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:48.872578",
+        "type": "new_process",
+        "process": "uvicorn",
+        "reason": "Process 'uvicorn' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:48.872578",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:49.881565",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:50.825458",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:54.677490",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:56.002088",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:49:56.909970",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:00.767960",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:02.081702",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:02.994040",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:06.906340",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:07.918173",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:08.170704",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:09.073804",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:13.013156",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:14.268066",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:15.154045",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:19.107996",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:20.348112",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:21.242176",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:25.195588",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:26.439223",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:26.995877",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:27.332434",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:31.285809",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:32.536812",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:33.409226",
+        "type": "new_process",
+        "process": "python",
+        "reason": "Process 'python' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:33.409226",
+        "type": "new_process",
+        "process": "MainThread",
+        "reason": "Process 'MainThread' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:33.409226",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:37.372987",
+        "type": "new_process",
+        "process": "chrome-headless-shell",
+        "reason": "Process 'chrome-headless-shell' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:37.372987",
+        "type": "new_process",
+        "process": "ffmpeg-linux",
+        "reason": "Process 'ffmpeg-linux' was not observed in any earlier log entries.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:37.372987",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:38.700404",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:39.541128",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:43.467425",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:44.781827",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:45.621768",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:46.176211",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:49.618557",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:50.879086",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:51.705183",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:55.718944",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:56.967607",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:50:57.789893",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:51:01.814843",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:51:03.054314",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:51:03.881872",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:51:05.246013",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:51:07.907539",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:51:09.151024",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T04:51:09.967031",
+        "type": "time_anomaly",
+        "process": null,
+        "reason": "Event occurred at hour 4, which is outside the typical range (1-1).",
+        "risk": "high"
+    },
+    {
         "timestamp": "2026-05-01T06:11:19.607915",
         "type": "new_process",
         "process": "System Idle Process",

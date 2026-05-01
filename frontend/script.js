@@ -27,6 +27,8 @@ function showSection(sectionName) {
 
 async function fetchData() {
     try {
+        let updateSuccessful = false;
+
         // Fetch summary
         const summaryRes = await fetch(`${API_BASE_URL}/summary`);
         if (summaryRes.ok) {
@@ -111,6 +113,16 @@ async function fetchData() {
                 `;
                 anomalyContainer.appendChild(item);
             });
+            updateSuccessful = true;
+        }
+
+        if (updateSuccessful) {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString();
+            const lastUpdatedElem = document.getElementById('last-updated');
+            if (lastUpdatedElem) {
+                lastUpdatedElem.innerText = `Last updated: ${timeStr}`;
+            }
         }
 
     } catch (error) {
@@ -118,5 +130,9 @@ async function fetchData() {
     }
 }
 
-// Load data on page load
-window.addEventListener('DOMContentLoaded', fetchData);
+// Initial fetch and set interval for auto-refresh
+window.addEventListener('DOMContentLoaded', () => {
+    fetchData();
+    // Refresh every 7 seconds
+    setInterval(fetchData, 7000);
+});
