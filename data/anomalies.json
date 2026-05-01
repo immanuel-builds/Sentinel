@@ -1,0 +1,785 @@
+[
+    {
+        "id": "32381404853bf845c7aee707b8139270",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "systemd",
+        "reason": "New process 'systemd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "ccfb89fc2b88ffe1f3779f3a1fd27c63",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kthreadd",
+        "reason": "New process 'kthreadd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "0a18fc6d82182654474b7bda8482b5af",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "pool_workqueue_release",
+        "reason": "New process 'pool_workqueue_release' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "2570079327cb3b2fc5cbf8392b95a3c2",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-rcu_g",
+        "reason": "New process 'kworker/R-rcu_g' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "1db01ab4325b6c42619bb90971f8d876",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-rcu_p",
+        "reason": "New process 'kworker/R-rcu_p' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "69d12905d62e3a535c0c529590e0d527",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-slub_",
+        "reason": "New process 'kworker/R-slub_' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "6f2488c7cc1c2a3df8a4abc19c8ea712",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-netns",
+        "reason": "New process 'kworker/R-netns' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "437829e85bef4c26c4bc5fa7f755fbbf",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/0:0H-events_highpri",
+        "reason": "New process 'kworker/0:0H-events_highpri' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "8eb2ab70e310b1c617c7f2257bc411e0",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-mm_pe",
+        "reason": "New process 'kworker/R-mm_pe' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "46b536d3cc94824fd018db4c4244d602",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "rcu_tasks_kthread",
+        "reason": "New process 'rcu_tasks_kthread' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "c19242740b01b5e7eab8df6d65e1fdf8",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "rcu_tasks_trace_kthread",
+        "reason": "New process 'rcu_tasks_trace_kthread' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "26a0f2dab284bbd76bcc999c18ae4d47",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "ksoftirqd/0",
+        "reason": "New process 'ksoftirqd/0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "490a0c495693966672e032c5f2fdb104",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "rcu_preempt",
+        "reason": "New process 'rcu_preempt' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "4e738dff87883f1abbc3dc7b43338226",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "migration/0",
+        "reason": "New process 'migration/0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "35a850dfa7ef0b477b71f5ec021d21f0",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "cpuhp/0",
+        "reason": "New process 'cpuhp/0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "e32ac6d9ab0953396e6d8e114021c965",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "cpuhp/1",
+        "reason": "New process 'cpuhp/1' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "f039da8fd590c0b4967e36f611ecea79",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "migration/1",
+        "reason": "New process 'migration/1' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "58b79bc6bd813d45f2971f8cbd5517d7",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "ksoftirqd/1",
+        "reason": "New process 'ksoftirqd/1' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "4847a318285acf4b352c33279ffcd2b8",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/1:0H-events_highpri",
+        "reason": "New process 'kworker/1:0H-events_highpri' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "ca21969c88c3a0a123486664bbf2a24f",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "cpuhp/2",
+        "reason": "New process 'cpuhp/2' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "ba90461d9f46a932fc35c7eab1aba248",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "migration/2",
+        "reason": "New process 'migration/2' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "aac63106236f170f4f37a62be70b0f70",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "ksoftirqd/2",
+        "reason": "New process 'ksoftirqd/2' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "1350d5ed7d8593413ecf03cc64e3ab44",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/2:0H-kblockd",
+        "reason": "New process 'kworker/2:0H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "3159b949213b00be59a016cb7b21073a",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "cpuhp/3",
+        "reason": "New process 'cpuhp/3' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "74bffdda4024e1bb60ccc240b63fd259",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "migration/3",
+        "reason": "New process 'migration/3' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "b41d30941d19940fe935927253866a87",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "ksoftirqd/3",
+        "reason": "New process 'ksoftirqd/3' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "dbc4aa15a633cd0a9a61dbb47af161be",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/3:0H-events_highpri",
+        "reason": "New process 'kworker/3:0H-events_highpri' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "68e5053602566c0db1010165713d80d3",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kdevtmpfs",
+        "reason": "New process 'kdevtmpfs' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "0d28da2b137dea9f815224703a7981bc",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-inet_",
+        "reason": "New process 'kworker/R-inet_' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "22e9efc2b0933df3fbdb81b77816f971",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "oom_reaper",
+        "reason": "New process 'oom_reaper' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "2fa779e1e698aac1fbeb989d213fdc2d",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-write",
+        "reason": "New process 'kworker/R-write' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "cbaab85f7bba3f8694d12411cea525b9",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kcompactd0",
+        "reason": "New process 'kcompactd0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "bea0bccdb3fbb2a76ac86c32a5b8e33c",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "ksmd",
+        "reason": "New process 'ksmd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "df7e4f4e98fbffd0b9b674451ae4af56",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "khugepaged",
+        "reason": "New process 'khugepaged' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "0aa0434b0245328ea8e9b8de927a0867",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-crypt",
+        "reason": "New process 'kworker/R-crypt' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "5f807e03e450ad02c9483f36b89c5450",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-kbloc",
+        "reason": "New process 'kworker/R-kbloc' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "06f0587224929b4bc5ec7ac236d8c4db",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/0:1H-kblockd",
+        "reason": "New process 'kworker/0:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "bb97d30cfa1699373ba586b2ce8abbe7",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kswapd0",
+        "reason": "New process 'kswapd0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "7210fb82edb876ca4534d0813abf8ac8",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-kthro",
+        "reason": "New process 'kworker/R-kthro' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "677354a0a63721849b293623efd404e0",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "irq/24-ACPI:Ged",
+        "reason": "New process 'irq/24-ACPI:Ged' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "c026d59ef58272fd1baf1afe3d08dec8",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-acpi_",
+        "reason": "New process 'kworker/R-acpi_' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "20904a86ddc729e247d52a1489287be3",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-mld",
+        "reason": "New process 'kworker/R-mld' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "2802e60bec0545e2dad4a26a5c8507cf",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-ipv6_",
+        "reason": "New process 'kworker/R-ipv6_' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "7461da04f67ca7e7229582ffa3b792cf",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/1:1H-kblockd",
+        "reason": "New process 'kworker/1:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "5498d8a4fe85c268f68db64ffcb84a17",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-kstrp",
+        "reason": "New process 'kworker/R-kstrp' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "ccf778ddc24072c373c84c34154c4ca6",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/3:1H-kblockd",
+        "reason": "New process 'kworker/3:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "06af14aa59cbdda6b8bf190c83aad5b9",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/2:1H-kblockd",
+        "reason": "New process 'kworker/2:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "e188652dc5b16d4803868ce341edfbaa",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "jbd2/vdb-8",
+        "reason": "New process 'jbd2/vdb-8' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "b34dcf5f66b4c7020019a0109365bef6",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/R-ext4-",
+        "reason": "New process 'kworker/R-ext4-' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "6bdd2bf7dde85581ebd5a742df74e5a1",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "systemd-journald",
+        "reason": "New process 'systemd-journald' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "665fdf92a8d6fcd11faa5d417bb83bf1",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "systemd-udevd",
+        "reason": "New process 'systemd-udevd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "937d3f3ae3c62b486d5da265a5dbd5fa",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "dbus-daemon",
+        "reason": "New process 'dbus-daemon' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "12f97f653aace5383a8dc8a7a69be27d",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "systemd-logind",
+        "reason": "New process 'systemd-logind' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "cc8209fb3ef0adbd460d9e14def7298c",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "agetty",
+        "reason": "New process 'agetty' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "ab8b518bc05ef8e91a206f8df502619d",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "containerd",
+        "reason": "New process 'containerd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "b0c868b4757b1aa9dc410c28360cb245",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "sshd",
+        "reason": "New process 'sshd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "101c56e31d2b2f665c29f33740f346d2",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "socat",
+        "reason": "New process 'socat' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "dd461081ff80c0bc59e2fbe5aa5c67be",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "(sd-pam)",
+        "reason": "New process '(sd-pam)' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "a3a27d67d3927cf60b2ac09ebd120662",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "dockerd",
+        "reason": "New process 'dockerd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "ef6766eb66251ca83614a7eb2e17b322",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "tmux: server",
+        "reason": "New process 'tmux: server' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "5990e04ff4fa1484a1b5aecb44a767fd",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "bash",
+        "reason": "New process 'bash' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "b894606b345073ca87f1ed28d73969fa",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "python3",
+        "reason": "New process 'python3' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "755d5853227e42582d7c3e349b0aad20",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/2:1-cgroup_destroy",
+        "reason": "New process 'kworker/2:1-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "8e5fbc5151df362369e56e00ca19ab35",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/1:0-cgroup_destroy",
+        "reason": "New process 'kworker/1:0-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "73a710ac17233a799d4a28453ac139e1",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/u8:3-events_unbound",
+        "reason": "New process 'kworker/u8:3-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "33f8f6aba4fc5a6b5a95c6a63ddeff4f",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/3:0-events",
+        "reason": "New process 'kworker/3:0-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "cc6690f51673d68bcf667c6e57926190",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/2:0-mm_percpu_wq",
+        "reason": "New process 'kworker/2:0-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "09dfcaee05a89bb287a583f9acdd2004",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/0:1-events",
+        "reason": "New process 'kworker/0:1-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "b1eef6060e68b93862302fd446e7c46f",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/u8:4-events_unbound",
+        "reason": "New process 'kworker/u8:4-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "7d9ba2987d48259615085853252f7629",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/1:1-events",
+        "reason": "New process 'kworker/1:1-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "5de17ec16d25393be31512dd5021de69",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/3:2",
+        "reason": "New process 'kworker/3:2' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "70afb0b1c60cf3d93c02f24c8f65b47e",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/0:0-cgroup_destroy",
+        "reason": "New process 'kworker/0:0-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "95e5202bd87bdcda47da5932bc910cbc",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "kworker/u8:1-events_unbound",
+        "reason": "New process 'kworker/u8:1-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "0ac1d41b7ba3ca2a514990f6a0eaaebd",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "inotifywait",
+        "reason": "New process 'inotifywait' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "f226d9d0bb3ac394bdf7df411505d873",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "tail",
+        "reason": "New process 'tail' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "b2ce26e2d06d938c74a754bf3483a785",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "uvicorn",
+        "reason": "New process 'uvicorn' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "272d6d2ff2d4386021fbaa765dac530d",
+        "timestamp": "2026-05-01T09:46:41.211048",
+        "type": "new_process",
+        "process": "sleep",
+        "reason": "New process 'sleep' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "c3d6974e8feae756d8856c961f92d827",
+        "timestamp": "2026-05-01T09:46:42.448680",
+        "type": "new_process",
+        "process": "kworker/3:0-mm_percpu_wq",
+        "reason": "New process 'kworker/3:0-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "4df40600da3aaa058153b18035eb1c77",
+        "timestamp": "2026-05-01T09:46:42.448680",
+        "type": "new_process",
+        "process": "kworker/1:1-events_power_efficient",
+        "reason": "New process 'kworker/1:1-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "a16c0620d4111f93cdde8a87266a3b25",
+        "timestamp": "2026-05-01T09:46:42.448680",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 12.2% is 3.2x the session average of 3.8%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "2a41a3e3bd7d9c162924df4897bf7c95",
+        "timestamp": "2026-05-01T09:46:42.479325",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 12.0% is 3.2x the session average of 3.8%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "0522f5544eb664762eef6e992f47b5f3",
+        "timestamp": "2026-05-01T09:46:43.183090",
+        "type": "new_process",
+        "process": "kworker/u8:3-writeback",
+        "reason": "New process 'kworker/u8:3-writeback' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "16e31690ac2a39dfa3fbfd817e42d61e",
+        "timestamp": "2026-05-01T09:46:43.183090",
+        "type": "new_process",
+        "process": "kworker/2:0-events",
+        "reason": "New process 'kworker/2:0-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "5b5eb70d56eb8501e692f2022266f5d1",
+        "timestamp": "2026-05-01T09:46:43.183090",
+        "type": "new_process",
+        "process": "kworker/u8:4-ext4-rsv-conversion",
+        "reason": "New process 'kworker/u8:4-ext4-rsv-conversion' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "e121ec8b46b75006ff6ac600737a258e",
+        "timestamp": "2026-05-01T09:46:47.221048",
+        "type": "new_process",
+        "process": "kworker/1:1-mm_percpu_wq",
+        "reason": "New process 'kworker/1:1-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "d024ce76a75e2580ee29cf5487e6405a",
+        "timestamp": "2026-05-01T09:46:48.458380",
+        "type": "new_process",
+        "process": "kworker/0:1-events_power_efficient",
+        "reason": "New process 'kworker/0:1-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "449f0356d8df49b61a6736384a7e70d8",
+        "timestamp": "2026-05-01T09:46:48.458380",
+        "type": "new_process",
+        "process": "kworker/u8:4-writeback",
+        "reason": "New process 'kworker/u8:4-writeback' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    }
+]
