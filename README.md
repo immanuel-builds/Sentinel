@@ -1,5 +1,8 @@
 # Sentinel — Behavior-Based Anomaly Tracker
 
+## Project Summary
+Sentinel is a lightweight security monitoring tool that tracks system behavior (CPU usage and process execution) to detect anomalies in real-time. By combining rule-based heuristics, statistical analysis, and machine learning (Isolation Forest), it identifies potential threats like unauthorized background processes or resource-heavy miners. Sentinel is built for transparency and resilience, providing an interactive dashboard for forensic review and maintaining stability through graceful degradation and atomic data handling.
+
 ## Overview
 Sentinel is a minimal, rule-based security monitoring system designed to track local system behavior and flag irregularities. It provides a lightweight alternative to heavy monitoring suites, focusing on process execution patterns and resource utilization anomalies.
 
