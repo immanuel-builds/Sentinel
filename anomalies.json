@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "timestamp": "2026-05-01T07:00:00",
+        "type": "Unauthorized Access",
+        "reason": "Multiple failed login attempts from unknown IP",
+        "risk_level": "Critical"
+    }
+]

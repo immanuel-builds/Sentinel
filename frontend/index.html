@@ -495,7 +495,7 @@
                         <span style="font-size: 11px; color: #10b981">+4.2%</span>
                     </div>
                     <p class="stat-label">Total Events</p>
-                    <p class="stat-value">1,248</p>
+                    <p class="stat-value" id="stat-total-events">0</p>
                 </div>
                 <div class="stat-card">
                     <div class="stat-header">
@@ -503,7 +503,7 @@
                         <span style="font-size: 11px; color: var(--error)">Attention</span>
                     </div>
                     <p class="stat-label">Anomalies Detected</p>
-                    <p class="stat-value">12</p>
+                    <p class="stat-value" id="stat-anomalies-detected">0</p>
                 </div>
                 <div class="stat-card">
                     <div class="stat-header">
@@ -511,7 +511,7 @@
                         <span style="font-size: 11px; color: var(--on-surface-variant)">Stable</span>
                     </div>
                     <p class="stat-label">Active Processes</p>
-                    <p class="stat-value">84</p>
+                    <p class="stat-value" id="stat-active-processes">0</p>
                 </div>
             </div>
             <div class="grid-main">
@@ -587,32 +587,8 @@
                             <th>CPU Usage</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td class="code-font">2023-10-24 14:02:12</td>
-                            <td>kernel_executor_x86</td>
-                            <td>0.4%</td>
-                        </tr>
-                        <tr>
-                            <td class="code-font">2023-10-24 14:02:08</td>
-                            <td>sentinel_daemon_v4</td>
-                            <td>12.1%</td>
-                        </tr>
-                        <tr>
-                            <td class="code-font">2023-10-24 14:01:55</td>
-                            <td>network_listener_ssl</td>
-                            <td>2.4%</td>
-                        </tr>
-                        <tr>
-                            <td class="code-font">2023-10-24 14:01:42</td>
-                            <td>python_script_parser</td>
-                            <td>45.0%</td>
-                        </tr>
-                        <tr>
-                            <td class="code-font">2023-10-24 14:00:12</td>
-                            <td>db_relational_worker</td>
-                            <td>1.2%</td>
-                        </tr>
+                    <tbody id="logs-table-body">
+                        <!-- Dynamic logs here -->
                     </tbody>
                 </table>
             </div>
@@ -623,47 +599,8 @@
                 <h2>Detected Anomalies</h2>
                 <p>Irregular patterns flagged by the Rule-Based Detection core.</p>
             </header>
-            <div class="anomaly-list">
-                <div class="anomaly-item">
-                    <div class="anomaly-info">
-                        <div class="anomaly-icon">
-                            <span class="material-symbols-outlined">priority_high</span>
-                        </div>
-                        <div>
-                            <p style="font-weight: 600;">New process detected</p>
-                            <p style="font-size: 12px; color: var(--on-surface-variant);">Source: 192.168.1.104 •
-                                /tmp/x86_sh</p>
-                        </div>
-                    </div>
-                    <span class="badge badge-error">Critical</span>
-                </div>
-                <div class="anomaly-item" style="border-left-color: var(--secondary);">
-                    <div class="anomaly-info">
-                        <div class="anomaly-icon"
-                            style="background: rgba(183, 200, 225, 0.1); color: var(--secondary);">
-                            <span class="material-symbols-outlined">speed</span>
-                        </div>
-                        <div>
-                            <p style="font-weight: 600;">CPU spike alert</p>
-                            <p style="font-size: 12px; color: var(--on-surface-variant);">Process: backup_routine_cron •
-                                Usage: 98%</p>
-                        </div>
-                    </div>
-                    <span class="badge">Warning</span>
-                </div>
-                <div class="anomaly-item" style="border-left-color: #10b981;">
-                    <div class="anomaly-info">
-                        <div class="anomaly-icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">
-                            <span class="material-symbols-outlined">schedule</span>
-                        </div>
-                        <div>
-                            <p style="font-weight: 600;">Odd time login</p>
-                            <p style="font-size: 12px; color: var(--on-surface-variant);">User: admin_root • Time: 03:14
-                                AM</p>
-                        </div>
-                    </div>
-                    <span class="badge badge-success">Resolved</span>
-                </div>
+            <div class="anomaly-list" id="anomaly-list-container">
+                <!-- Dynamic anomalies here -->
             </div>
         </section>
         <!-- REPORTS -->
@@ -719,32 +656,7 @@
             </div>
         </section>
     </main>
-    <script>
-        function showSection(sectionName) {
-            // Hide all sections
-            const sections = document.querySelectorAll('.section-view');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-
-            // Show target
-            const target = document.getElementById('section-' + sectionName);
-            if (target) {
-                target.classList.add('active');
-            }
-
-            // Update nav styling
-            const navItems = document.querySelectorAll('.nav-item');
-            navItems.forEach(item => {
-                const text = item.innerText.trim();
-                if (text.toLowerCase().includes(sectionName.toLowerCase())) {
-                    item.classList.add('active');
-                } else {
-                    item.classList.remove('active');
-                }
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
