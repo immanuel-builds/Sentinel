@@ -399,6 +399,17 @@ select {
     color: var(--on-surface-variant);
 }
 
+.btn-filter {
+    background: transparent;
+    color: var(--on-surface-variant);
+    border: none;
+}
+
+.btn-filter.active {
+    background: var(--surface-container-high);
+    color: var(--primary);
+}
+
 .btn-sm {
     padding: 6px 12px;
     font-size: 11px;

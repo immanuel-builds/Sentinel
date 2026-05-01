@@ -64,4 +64,5 @@ Each anomaly entry in `data/anomalies.json` follows this schema:
 - **Heuristic Analysis**: Detects CPU spikes relative to session averages and identifies off-hours activity based on automated baselining.
 - **State Management**: Persistent anomaly statuses that survive system restarts and analysis cycles.
 - **Real-time Visualization**: Dashboard auto-refreshes every 7 seconds to display the latest system state.
+- **Client-Side Filtering**: Powerful search and status filters for both logs and anomalies. Filtering happens instantly in the browser without additional backend requests.
 - **Data Integrity**: Uses atomic JSON writes with temporary files to prevent data corruption during simultaneous read/write operations.
