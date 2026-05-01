@@ -1,16 +1,16 @@
 [
     {
-        "id": "6de81e268d66200fc169bd891065e720",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "2802d8f75486c5dde80e9a746b2ade3e",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "systemd",
         "reason": "New process 'systemd' detected during normal hours. This process was not observed in the baseline period.",
         "risk": "low",
-        "status": "reviewed"
+        "status": "pending"
     },
     {
-        "id": "bd2a23ee2805636b79f5466da1c9439c",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "ace4d70c58a7d61fee19f72df6378c29",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kthreadd",
         "reason": "New process 'kthreadd' detected during normal hours. This process was not observed in the baseline period.",
@@ -18,8 +18,8 @@
         "status": "pending"
     },
     {
-        "id": "ace4d03d215b74ed98cc60897cdcf6fa",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "f88eb678e888f5a128238abae2317be8",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "pool_workqueue_release",
         "reason": "New process 'pool_workqueue_release' detected during normal hours. This process was not observed in the baseline period.",
@@ -27,8 +27,8 @@
         "status": "pending"
     },
     {
-        "id": "3b7a29896e864a659b0d81acea6cc620",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "b0c94bccb74408a7021ca5edff0aee7d",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-rcu_g",
         "reason": "New process 'kworker/R-rcu_g' detected during normal hours. This process was not observed in the baseline period.",
@@ -36,8 +36,8 @@
         "status": "pending"
     },
     {
-        "id": "77d3053f55f4ef8af03ef01fbc231fec",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "763fd434459926fd4a060281087d14a4",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-rcu_p",
         "reason": "New process 'kworker/R-rcu_p' detected during normal hours. This process was not observed in the baseline period.",
@@ -45,8 +45,8 @@
         "status": "pending"
     },
     {
-        "id": "a5b7e34bb0efdbbdadbac0625a6bb0de",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "9e2d75e5ee85c760634d616146a1b957",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-slub_",
         "reason": "New process 'kworker/R-slub_' detected during normal hours. This process was not observed in the baseline period.",
@@ -54,8 +54,8 @@
         "status": "pending"
     },
     {
-        "id": "fb194cc216faf629fc6d531e9b94f19c",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "4b2924c0a39e84e6e3b28417e213c5a8",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-netns",
         "reason": "New process 'kworker/R-netns' detected during normal hours. This process was not observed in the baseline period.",
@@ -63,8 +63,8 @@
         "status": "pending"
     },
     {
-        "id": "2916ee7997de3f36768455255a6b60b5",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "419a6de5a1cea3c6578d2a3d8ea39049",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/0:0H-events_highpri",
         "reason": "New process 'kworker/0:0H-events_highpri' detected during normal hours. This process was not observed in the baseline period.",
@@ -72,8 +72,8 @@
         "status": "pending"
     },
     {
-        "id": "bc7546d17725ae0fa4ebb9a872f9ba83",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "568be9d24f32bba0b4feb5df19b6d44b",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-mm_pe",
         "reason": "New process 'kworker/R-mm_pe' detected during normal hours. This process was not observed in the baseline period.",
@@ -81,8 +81,8 @@
         "status": "pending"
     },
     {
-        "id": "e2235c07f2a735d9d824976d31c4d409",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "a8fad4323e5b31f71d571d453501bab3",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "rcu_tasks_kthread",
         "reason": "New process 'rcu_tasks_kthread' detected during normal hours. This process was not observed in the baseline period.",
@@ -90,8 +90,8 @@
         "status": "pending"
     },
     {
-        "id": "b5294948db1795eddd70936efca592d2",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "15583abcb5b6a7153a76be6a5fddfc8f",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "rcu_tasks_trace_kthread",
         "reason": "New process 'rcu_tasks_trace_kthread' detected during normal hours. This process was not observed in the baseline period.",
@@ -99,8 +99,8 @@
         "status": "pending"
     },
     {
-        "id": "22f6cb105f6fcb07357e89506ce55d36",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "3d1b31879e8d111549e47a51e32695c9",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "ksoftirqd/0",
         "reason": "New process 'ksoftirqd/0' detected during normal hours. This process was not observed in the baseline period.",
@@ -108,8 +108,8 @@
         "status": "pending"
     },
     {
-        "id": "b06ab8838e726284c93c620fa9cb84fb",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "e76230d4b3f043dff40189b80331759b",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "rcu_preempt",
         "reason": "New process 'rcu_preempt' detected during normal hours. This process was not observed in the baseline period.",
@@ -117,8 +117,8 @@
         "status": "pending"
     },
     {
-        "id": "02661f3b7acb414036b32238e4341398",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "bd0c3dfd2826e6503354015557fdf658",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "migration/0",
         "reason": "New process 'migration/0' detected during normal hours. This process was not observed in the baseline period.",
@@ -126,8 +126,8 @@
         "status": "pending"
     },
     {
-        "id": "fb9577b909db2e849d771be09fd7d0c4",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "3c272cf0a36e6aec31fe6aed4d085cc8",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "cpuhp/0",
         "reason": "New process 'cpuhp/0' detected during normal hours. This process was not observed in the baseline period.",
@@ -135,8 +135,8 @@
         "status": "pending"
     },
     {
-        "id": "f20fa535a5a9cc6e68e73816d5620811",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "a2c88fecd1e7dd5022e012f45c3a5307",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "cpuhp/1",
         "reason": "New process 'cpuhp/1' detected during normal hours. This process was not observed in the baseline period.",
@@ -144,8 +144,8 @@
         "status": "pending"
     },
     {
-        "id": "3ac907fd7ce8014688f66cb9350117a1",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "1a08bce722c23346a788a75f3029f410",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "migration/1",
         "reason": "New process 'migration/1' detected during normal hours. This process was not observed in the baseline period.",
@@ -153,8 +153,8 @@
         "status": "pending"
     },
     {
-        "id": "cdbb037bcc0f32e0e90f20dbceae26fb",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "ad46e6b6d84835dd4f29e32cb63b63b4",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "ksoftirqd/1",
         "reason": "New process 'ksoftirqd/1' detected during normal hours. This process was not observed in the baseline period.",
@@ -162,8 +162,8 @@
         "status": "pending"
     },
     {
-        "id": "bf313035fccbbbc31acabd9cf4816033",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "ccc4f91c8532ec161712de42ca3102b7",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/1:0H-events_highpri",
         "reason": "New process 'kworker/1:0H-events_highpri' detected during normal hours. This process was not observed in the baseline period.",
@@ -171,8 +171,8 @@
         "status": "pending"
     },
     {
-        "id": "b42f22b873f6047cab100f61f849b6e0",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "060d7d683b34b23418b797ba1ea8ccc4",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "cpuhp/2",
         "reason": "New process 'cpuhp/2' detected during normal hours. This process was not observed in the baseline period.",
@@ -180,8 +180,8 @@
         "status": "pending"
     },
     {
-        "id": "c1999fb2e9c6d1d98eab83d7d4f2372c",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "e2a53ad9ee19048677844d7d35739614",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "migration/2",
         "reason": "New process 'migration/2' detected during normal hours. This process was not observed in the baseline period.",
@@ -189,8 +189,8 @@
         "status": "pending"
     },
     {
-        "id": "20185292acc61f89b7aa00228ece672a",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "32185016e526cc439cc032c084b73848",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "ksoftirqd/2",
         "reason": "New process 'ksoftirqd/2' detected during normal hours. This process was not observed in the baseline period.",
@@ -198,8 +198,8 @@
         "status": "pending"
     },
     {
-        "id": "b444f3b73a14ae2163792cddcfc883a1",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "d9a95e5a2d9378d5d537e8626d7c353d",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/2:0H-kblockd",
         "reason": "New process 'kworker/2:0H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
@@ -207,8 +207,8 @@
         "status": "pending"
     },
     {
-        "id": "120c11e7bbdf399152f724bf8d104988",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "81da16a2fbeebd37281520fc8cb4e4c7",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "cpuhp/3",
         "reason": "New process 'cpuhp/3' detected during normal hours. This process was not observed in the baseline period.",
@@ -216,8 +216,8 @@
         "status": "pending"
     },
     {
-        "id": "71d186bb529f6d9c56a09f09ba536df4",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "26f32009978be0a578cc3d4940fcebf7",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "migration/3",
         "reason": "New process 'migration/3' detected during normal hours. This process was not observed in the baseline period.",
@@ -225,8 +225,8 @@
         "status": "pending"
     },
     {
-        "id": "acf92b4dd654992e4c131af3db0d41f2",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "1264b5f6a37f079d58df29ee9cc95055",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "ksoftirqd/3",
         "reason": "New process 'ksoftirqd/3' detected during normal hours. This process was not observed in the baseline period.",
@@ -234,8 +234,8 @@
         "status": "pending"
     },
     {
-        "id": "52e8d74834b7c7b292ca74c3f9cfcb67",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "6e0055a17690c532a35e45b3a336409a",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/3:0H-events_highpri",
         "reason": "New process 'kworker/3:0H-events_highpri' detected during normal hours. This process was not observed in the baseline period.",
@@ -243,8 +243,8 @@
         "status": "pending"
     },
     {
-        "id": "a51878a9b1376d9d04a639d5bacc2e01",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "5f4699029af9d34e955143d4449162e3",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kdevtmpfs",
         "reason": "New process 'kdevtmpfs' detected during normal hours. This process was not observed in the baseline period.",
@@ -252,8 +252,8 @@
         "status": "pending"
     },
     {
-        "id": "b0c2f270437255dd9766f1b4b11a0a65",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "e3a6d438faa4bea708505acf7731ab85",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-inet_",
         "reason": "New process 'kworker/R-inet_' detected during normal hours. This process was not observed in the baseline period.",
@@ -261,8 +261,8 @@
         "status": "pending"
     },
     {
-        "id": "944108d872e79c7785b27a87e51c694c",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "7a96b3c0fb99eb4de64495f3d3f2b5cf",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "oom_reaper",
         "reason": "New process 'oom_reaper' detected during normal hours. This process was not observed in the baseline period.",
@@ -270,8 +270,8 @@
         "status": "pending"
     },
     {
-        "id": "1101e9ebf6db02b58a301ab398adda57",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "c18ea9d003ff82b0f6cd08c8efd835df",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-write",
         "reason": "New process 'kworker/R-write' detected during normal hours. This process was not observed in the baseline period.",
@@ -279,8 +279,8 @@
         "status": "pending"
     },
     {
-        "id": "80932f2a41896bfc04567c67e036048d",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "e077917cd8c205a620a21ea0173cd6fb",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kcompactd0",
         "reason": "New process 'kcompactd0' detected during normal hours. This process was not observed in the baseline period.",
@@ -288,8 +288,8 @@
         "status": "pending"
     },
     {
-        "id": "08d668b533a7f8292ea4bc3e87c449de",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "0b10ab506ad700a0c65d368f739b1ab8",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "ksmd",
         "reason": "New process 'ksmd' detected during normal hours. This process was not observed in the baseline period.",
@@ -297,8 +297,8 @@
         "status": "pending"
     },
     {
-        "id": "40c7a15f4a097bfcff5bcf1a6067af67",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "b16c87c6c419cad447aceb1b7a4d27c0",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "khugepaged",
         "reason": "New process 'khugepaged' detected during normal hours. This process was not observed in the baseline period.",
@@ -306,8 +306,8 @@
         "status": "pending"
     },
     {
-        "id": "084bafa1d8920113a8dda9d25b638e6e",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "72205ecefc9a37de8d5957e1593ab676",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-crypt",
         "reason": "New process 'kworker/R-crypt' detected during normal hours. This process was not observed in the baseline period.",
@@ -315,8 +315,8 @@
         "status": "pending"
     },
     {
-        "id": "0f1defbf2986692bb6504e2bc0398661",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "078428d8cefadeb9c86fa3c49fcfdee0",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-kbloc",
         "reason": "New process 'kworker/R-kbloc' detected during normal hours. This process was not observed in the baseline period.",
@@ -324,8 +324,8 @@
         "status": "pending"
     },
     {
-        "id": "a48130e96b3f14e6432144161d90b613",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "5df3f0b155a712f72f7fa3c3687d958f",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/0:1H-kblockd",
         "reason": "New process 'kworker/0:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
@@ -333,8 +333,8 @@
         "status": "pending"
     },
     {
-        "id": "65c3401f3e3d8c3c953995985f1374ca",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "bdf3ff77ad95bd443d30a456dd1161d2",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kswapd0",
         "reason": "New process 'kswapd0' detected during normal hours. This process was not observed in the baseline period.",
@@ -342,8 +342,8 @@
         "status": "pending"
     },
     {
-        "id": "a669b61d50fac634df8738a41ded9ead",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "b9171f63ac57b1932210749389b9567b",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-kthro",
         "reason": "New process 'kworker/R-kthro' detected during normal hours. This process was not observed in the baseline period.",
@@ -351,8 +351,8 @@
         "status": "pending"
     },
     {
-        "id": "8dcc42eb2f3cbc04f33a5995d7673cf9",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "71d2c3b125d5bfe2370cfcffd1ac319d",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "irq/24-ACPI:Ged",
         "reason": "New process 'irq/24-ACPI:Ged' detected during normal hours. This process was not observed in the baseline period.",
@@ -360,8 +360,8 @@
         "status": "pending"
     },
     {
-        "id": "7c42375acfec34580af0b3d80004846e",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "fda0c6d4dcbb87eb08060a4944bb4d2c",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-acpi_",
         "reason": "New process 'kworker/R-acpi_' detected during normal hours. This process was not observed in the baseline period.",
@@ -369,8 +369,8 @@
         "status": "pending"
     },
     {
-        "id": "56db206cc7f498f92aa2a0c916a47ae0",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "e34c408f47fdd50d0a5aa25ac670424e",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-mld",
         "reason": "New process 'kworker/R-mld' detected during normal hours. This process was not observed in the baseline period.",
@@ -378,8 +378,8 @@
         "status": "pending"
     },
     {
-        "id": "18ea773d10218f1ea50b2485e83d9b8d",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "02e0277061112069a5f717c03629d3f4",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-ipv6_",
         "reason": "New process 'kworker/R-ipv6_' detected during normal hours. This process was not observed in the baseline period.",
@@ -387,8 +387,8 @@
         "status": "pending"
     },
     {
-        "id": "68bc53a484e8521d8d18c7fae918df8b",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "c75fc0823309e50d8647dab8681186c9",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/1:1H-kblockd",
         "reason": "New process 'kworker/1:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
@@ -396,8 +396,8 @@
         "status": "pending"
     },
     {
-        "id": "8d7cb43d12ea8dae0047cf693b46a9ed",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "da89dfcdd5a32443c4d04f114b9ac1c1",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-kstrp",
         "reason": "New process 'kworker/R-kstrp' detected during normal hours. This process was not observed in the baseline period.",
@@ -405,8 +405,8 @@
         "status": "pending"
     },
     {
-        "id": "edb678cbe5c76e12f9cfd001411b0491",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "b79623498a747bc30a45fbf426cc6a67",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/3:1H-kblockd",
         "reason": "New process 'kworker/3:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
@@ -414,8 +414,8 @@
         "status": "pending"
     },
     {
-        "id": "15ca871adeb5ecda8e554a3b40e67c89",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "6c1d5e612eae6c4cbd7e43ef0fefec37",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/2:1H-kblockd",
         "reason": "New process 'kworker/2:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
@@ -423,8 +423,8 @@
         "status": "pending"
     },
     {
-        "id": "4c39c0c2da4b7d1517d306a0194bce57",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "cdc0d4b597b3bc9bf5c6f03bcb5cd0d6",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "jbd2/vdb-8",
         "reason": "New process 'jbd2/vdb-8' detected during normal hours. This process was not observed in the baseline period.",
@@ -432,8 +432,8 @@
         "status": "pending"
     },
     {
-        "id": "96dc3b19fab459615c3a6581b7c03889",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "8fa2c8d97c29e542c785c9ac4921b18a",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/R-ext4-",
         "reason": "New process 'kworker/R-ext4-' detected during normal hours. This process was not observed in the baseline period.",
@@ -441,8 +441,8 @@
         "status": "pending"
     },
     {
-        "id": "9686d10b24d06cf7fa8379d9fb4d9ec7",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "cdd131afcd757144c69137c6b3816e90",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "systemd-journald",
         "reason": "New process 'systemd-journald' detected during normal hours. This process was not observed in the baseline period.",
@@ -450,8 +450,8 @@
         "status": "pending"
     },
     {
-        "id": "c38f5eeaf7f79785b8bcd056a14bb44d",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "4bd14a014bf74aab414583862a1d9584",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "systemd-udevd",
         "reason": "New process 'systemd-udevd' detected during normal hours. This process was not observed in the baseline period.",
@@ -459,8 +459,8 @@
         "status": "pending"
     },
     {
-        "id": "96064b605573079d965702da688167ac",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "e6a8e5b2b477fd35a18901b5285a5fcc",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "dbus-daemon",
         "reason": "New process 'dbus-daemon' detected during normal hours. This process was not observed in the baseline period.",
@@ -468,8 +468,8 @@
         "status": "pending"
     },
     {
-        "id": "62e83d5968b6aee0b580e5f6906144b4",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "dce4280bda50a509c21e9f5643eb04b7",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "systemd-logind",
         "reason": "New process 'systemd-logind' detected during normal hours. This process was not observed in the baseline period.",
@@ -477,8 +477,8 @@
         "status": "pending"
     },
     {
-        "id": "39c882b5daf3c56ea1f2561c919e70af",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "200c03e68b9f8a32345540f2b5d750f5",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "agetty",
         "reason": "New process 'agetty' detected during normal hours. This process was not observed in the baseline period.",
@@ -486,8 +486,8 @@
         "status": "pending"
     },
     {
-        "id": "17480b54317ac5d4ee6922c1bc3b25b1",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "16321aab29c84fe775ffa63b6e82b2f0",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "containerd",
         "reason": "New process 'containerd' detected during normal hours. This process was not observed in the baseline period.",
@@ -495,8 +495,8 @@
         "status": "pending"
     },
     {
-        "id": "d5398797c44137c3bc9676f80eb7b3b5",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "d73639b3f621129170b8bfdeee31a692",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "sshd",
         "reason": "New process 'sshd' detected during normal hours. This process was not observed in the baseline period.",
@@ -504,8 +504,8 @@
         "status": "pending"
     },
     {
-        "id": "67846eecf07a022e83fdf8cd75627276",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "2ebb4a8792645c70b3cb3cd3180a57f5",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "socat",
         "reason": "New process 'socat' detected during normal hours. This process was not observed in the baseline period.",
@@ -513,8 +513,8 @@
         "status": "pending"
     },
     {
-        "id": "27339a1c57eb334452cd9533518e2b51",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "f73d9c9b5382a9cf4b2c36735ba351a8",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "(sd-pam)",
         "reason": "New process '(sd-pam)' detected during normal hours. This process was not observed in the baseline period.",
@@ -522,8 +522,8 @@
         "status": "pending"
     },
     {
-        "id": "3bb553db9c9908d87680a58075a5824e",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "0628f2e22fab6287c67045e02513bc7b",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "dockerd",
         "reason": "New process 'dockerd' detected during normal hours. This process was not observed in the baseline period.",
@@ -531,8 +531,8 @@
         "status": "pending"
     },
     {
-        "id": "f41945052f35970887fee275b2253de2",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "03f2c6a69511d29f9bf6fe45787e4e40",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "tmux: server",
         "reason": "New process 'tmux: server' detected during normal hours. This process was not observed in the baseline period.",
@@ -540,8 +540,8 @@
         "status": "pending"
     },
     {
-        "id": "90c6cd9c715282809d834931ecfc4515",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "b7f7a09803456a556cdfafa9a6a77dd5",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/0:1-cgroup_destroy",
         "reason": "New process 'kworker/0:1-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
@@ -549,17 +549,8 @@
         "status": "pending"
     },
     {
-        "id": "019b7d64d6728199fe5a278d18291f4b",
-        "timestamp": "2026-05-01T06:36:37.671927",
-        "type": "new_process",
-        "process": "kworker/1:0-events",
-        "reason": "New process 'kworker/1:0-events' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "c2ef4a3fe99d20ac01bfd53b943116b5",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "72e6577e485e6e4cdb4ea8888019b63c",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/u8:1-events_unbound",
         "reason": "New process 'kworker/u8:1-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
@@ -567,17 +558,8 @@
         "status": "pending"
     },
     {
-        "id": "37b364fbec3fbf050f60fb435c531f34",
-        "timestamp": "2026-05-01T06:36:37.671927",
-        "type": "new_process",
-        "process": "python3",
-        "reason": "New process 'python3' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "6ca33e580d7cacfab294a6e2b1ffe914",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "dc0d4b57ec0149b139ced769f3f181d6",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "bash",
         "reason": "New process 'bash' detected during normal hours. This process was not observed in the baseline period.",
@@ -585,8 +567,17 @@
         "status": "pending"
     },
     {
-        "id": "306feaa661ed0e32dd398e89863025e7",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "886a38050aa5c96853d3429505f0f7a5",
+        "timestamp": "2026-05-01T08:06:39.455774",
+        "type": "new_process",
+        "process": "python3",
+        "reason": "New process 'python3' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "fa800b94d6ca1023dd28eb344ecddde1",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/0:2-mm_percpu_wq",
         "reason": "New process 'kworker/0:2-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
@@ -594,17 +585,8 @@
         "status": "pending"
     },
     {
-        "id": "923d19f92fd36fcd3b83837b4f77402f",
-        "timestamp": "2026-05-01T06:36:37.671927",
-        "type": "new_process",
-        "process": "kworker/3:0-events",
-        "reason": "New process 'kworker/3:0-events' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "212c88e4a572554c250c30cd6bceefca",
-        "timestamp": "2026-05-01T06:36:37.671927",
+        "id": "b68fe41fdfd16098e2b0683aeee2c693",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/2:2",
         "reason": "New process 'kworker/2:2' detected during normal hours. This process was not observed in the baseline period.",
@@ -612,125 +594,8 @@
         "status": "pending"
     },
     {
-        "id": "cc07bc988dc0962752b66023b9dddab6",
-        "timestamp": "2026-05-01T06:36:37.671927",
-        "type": "new_process",
-        "process": "kworker/1:1-mm_percpu_wq",
-        "reason": "New process 'kworker/1:1-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "323554eeb16401847941d7042e607928",
-        "timestamp": "2026-05-01T06:36:37.671927",
-        "type": "new_process",
-        "process": "kworker/u8:3-events_unbound",
-        "reason": "New process 'kworker/u8:3-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "d4b440ab625039e0365e2703506345d4",
-        "timestamp": "2026-05-01T06:36:37.671927",
-        "type": "new_process",
-        "process": "kworker/2:0-mm_percpu_wq",
-        "reason": "New process 'kworker/2:0-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "7ff4eaa80236187d1b4589bff562815a",
-        "timestamp": "2026-05-01T06:36:37.671927",
-        "type": "new_process",
-        "process": "kworker/u8:2-flush-254:16",
-        "reason": "New process 'kworker/u8:2-flush-254:16' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "ac180c07cd907fe75adf81c4e300d4e4",
-        "timestamp": "2026-05-01T06:36:37.671927",
-        "type": "new_process",
-        "process": "kworker/u8:0-ext4-rsv-conversion",
-        "reason": "New process 'kworker/u8:0-ext4-rsv-conversion' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "bbb18b72056c7804950f905da94c8810",
-        "timestamp": "2026-05-01T06:36:37.671927",
-        "type": "new_process",
-        "process": "kworker/3:1-mm_percpu_wq",
-        "reason": "New process 'kworker/3:1-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "0f232b1c7e0689a770e3a3c05e926d63",
-        "timestamp": "2026-05-01T06:36:43.716255",
-        "type": "new_process",
-        "process": "kworker/0:2-events_power_efficient",
-        "reason": "New process 'kworker/0:2-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "c49d27b7a4630f2b9477d92040c20104",
-        "timestamp": "2026-05-01T06:36:43.716255",
-        "type": "new_process",
-        "process": "kworker/1:1-events_power_efficient",
-        "reason": "New process 'kworker/1:1-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "a1895d2f1029996ea8d7f249cc097e0d",
-        "timestamp": "2026-05-01T06:36:43.716255",
-        "type": "new_process",
-        "process": "kworker/u8:2-events_unbound",
-        "reason": "New process 'kworker/u8:2-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "4fee14c54585cbe3612a2c96e6b585cf",
-        "timestamp": "2026-05-01T06:36:55.734055",
-        "type": "new_process",
-        "process": "kworker/u8:2-writeback",
-        "reason": "New process 'kworker/u8:2-writeback' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "033dcf802d532f8447f67397a2d65ec1",
-        "timestamp": "2026-05-01T06:36:55.734055",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 14.8% is 2.3x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "054a89b961b68202e530a3aa33e89c6d",
-        "timestamp": "2026-05-01T06:36:55.761739",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 15.3% is 2.4x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "2b1179dbf80942f80cf14cd7b48e5db1",
-        "timestamp": "2026-05-01T06:37:01.743833",
-        "type": "new_process",
-        "process": "kworker/0:2-events",
-        "reason": "New process 'kworker/0:2-events' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "25b38abfc86287b167bce4e0a439b763",
-        "timestamp": "2026-05-01T06:37:01.743833",
+        "id": "0de8d04f4b6a2687b11cc966ffecca63",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/1:1-events",
         "reason": "New process 'kworker/1:1-events' detected during normal hours. This process was not observed in the baseline period.",
@@ -738,188 +603,8 @@
         "status": "pending"
     },
     {
-        "id": "e32e5651ea781f389e00b51a64f6016e",
-        "timestamp": "2026-05-01T06:37:01.743833",
-        "type": "new_process",
-        "process": "kworker/2:0-events",
-        "reason": "New process 'kworker/2:0-events' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "21a7764d10c634eeed3250276fe01aac",
-        "timestamp": "2026-05-01T06:37:01.743833",
-        "type": "new_process",
-        "process": "kworker/3:1-events",
-        "reason": "New process 'kworker/3:1-events' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "30a98908626841f30a222ca8843d1b95",
-        "timestamp": "2026-05-01T06:37:01.743833",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 22.2% is 3.5x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "d1c2264247ee39ee75cd445ec3da7340",
-        "timestamp": "2026-05-01T06:37:01.771058",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 23.2% is 3.7x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "b56ed5e72ba00152772df350b55c77cb",
-        "timestamp": "2026-05-01T06:37:13.763040",
-        "type": "new_process",
-        "process": "kworker/u8:0-events_unbound",
-        "reason": "New process 'kworker/u8:0-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "6048443742769a4802ad4611029aa3c4",
-        "timestamp": "2026-05-01T06:37:19.773409",
-        "type": "new_process",
-        "process": "kworker/u8:0-flush-254:16",
-        "reason": "New process 'kworker/u8:0-flush-254:16' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "e92124272488856aad8ae94b83a9ca0e",
-        "timestamp": "2026-05-01T06:37:31.794527",
-        "type": "new_process",
-        "process": "kworker/u8:2-ext4-rsv-conversion",
-        "reason": "New process 'kworker/u8:2-ext4-rsv-conversion' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "35d43997dcf68602ca2a97e43a71eea8",
-        "timestamp": "2026-05-01T06:37:49.827425",
-        "type": "new_process",
-        "process": "sudo",
-        "reason": "New process 'sudo' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "b9ecaee8a54d8d1aca0975a7b5f79103",
-        "timestamp": "2026-05-01T06:37:49.827425",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 18.9% is 3.0x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "7a25e50651f78adb84058592750b1555",
-        "timestamp": "2026-05-01T06:37:49.856352",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 18.1% is 2.9x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "239a2061dfbf140fadbf5a98b43e0fec",
-        "timestamp": "2026-05-01T06:37:55.841432",
-        "type": "new_process",
-        "process": "kworker/3:1-events_power_efficient",
-        "reason": "New process 'kworker/3:1-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "c4ae84ee93226c46af43359b76836a48",
-        "timestamp": "2026-05-01T06:38:01.853990",
-        "type": "new_process",
-        "process": "inotifywait",
-        "reason": "New process 'inotifywait' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "12142c6bc2bbfffa9b4cbc37eff5ec8c",
-        "timestamp": "2026-05-01T06:38:01.853990",
-        "type": "new_process",
-        "process": "tail",
-        "reason": "New process 'tail' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "095ad9e8ced7ba293c2815f2e0387cc1",
-        "timestamp": "2026-05-01T06:38:37.931001",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 15.6% is 2.5x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "ee7a7baf5379036796e207a113699536",
-        "timestamp": "2026-05-01T06:38:37.964094",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 14.1% is 2.2x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "3fcf6e2b921e654faed71d153a08b05f",
-        "timestamp": "2026-05-01T06:38:43.977858",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 13.0% is 2.1x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "bc9521dbc8dd3f8e56eebeed0745b15e",
-        "timestamp": "2026-05-01T06:38:55.971130",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 13.8% is 2.2x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "dbc1c64d65ebf0fca7af5f9661a88bec",
-        "timestamp": "2026-05-01T06:38:56.003715",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 13.1% is 2.1x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "fdf5b75c56aea3030fcfd15915abaccb",
-        "timestamp": "2026-05-01T06:39:01.984468",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 21.1% is 3.3x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "1dc570f27db68fbb2b04552e28bfcc93",
-        "timestamp": "2026-05-01T06:39:02.016898",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 20.1% is 3.2x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "e618ddef54df95bdfdce059af2ac71fc",
-        "timestamp": "2026-05-01T06:39:14.013053",
+        "id": "5dbf82a374348ed5c3d3452bb96586a9",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/u8:0-writeback",
         "reason": "New process 'kworker/u8:0-writeback' detected during normal hours. This process was not observed in the baseline period.",
@@ -927,269 +612,17 @@
         "status": "pending"
     },
     {
-        "id": "c3b632ea46287341f114f1522580b336",
-        "timestamp": "2026-05-01T06:39:56.117774",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 20.1% is 3.2x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "86e57de47f28572c57f67efd1389d373",
-        "timestamp": "2026-05-01T06:39:56.148448",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 20.9% is 3.3x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "26dac5e7c2c66d845a998ba536b1ec22",
-        "timestamp": "2026-05-01T06:40:02.132639",
+        "id": "65a957ab97fb12d1dfbc8b2b61a5adc6",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
-        "process": "kworker/3:1-events_long",
-        "reason": "New process 'kworker/3:1-events_long' detected during normal hours. This process was not observed in the baseline period.",
+        "process": "kworker/3:1-events",
+        "reason": "New process 'kworker/3:1-events' detected during normal hours. This process was not observed in the baseline period.",
         "risk": "low",
         "status": "pending"
     },
     {
-        "id": "4b6c010f3072c91fcb8627c226ca5396",
-        "timestamp": "2026-05-01T06:40:08.148702",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 16.5% is 2.6x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "b2bb9057b3489898ba19397fd042f557",
-        "timestamp": "2026-05-01T06:40:08.179399",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 17.0% is 2.7x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "66cbd659d08f4b8cae36e7d263a79d11",
-        "timestamp": "2026-05-01T06:40:26.197307",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 22.7% is 3.6x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "622015f6a90aad4e1baf7a4cdc4d41d1",
-        "timestamp": "2026-05-01T06:40:26.227481",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 23.8% is 3.8x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "c08a51aab368e466696aaaa6b49959f5",
-        "timestamp": "2026-05-01T06:40:32.213439",
-        "type": "new_process",
-        "process": "kworker/1:1-rcu_gp",
-        "reason": "New process 'kworker/1:1-rcu_gp' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "54ace90a53aeaa7f15f47b26af885338",
-        "timestamp": "2026-05-01T06:40:32.213439",
-        "type": "new_process",
-        "process": "kworker/2:0-cgroup_destroy",
-        "reason": "New process 'kworker/2:0-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "2e6e5b544e31f0d97835b9de7fec3bff",
-        "timestamp": "2026-05-01T06:40:32.213439",
-        "type": "new_process",
-        "process": "kworker/2:1-mm_percpu_wq",
-        "reason": "New process 'kworker/2:1-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "c71928edebb83824115ba8337f002c1f",
-        "timestamp": "2026-05-01T06:40:44.247907",
-        "type": "new_process",
-        "process": "kworker/3:1-ipv6_addrconf",
-        "reason": "New process 'kworker/3:1-ipv6_addrconf' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "4815672e25d84798a8145eb1abcad158",
-        "timestamp": "2026-05-01T06:41:14.335874",
-        "type": "new_process",
-        "process": "kworker/2:1-events",
-        "reason": "New process 'kworker/2:1-events' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "6413ea9a81c4f1824a448cda6614bf95",
-        "timestamp": "2026-05-01T06:41:14.335874",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 19.1% is 3.0x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "db6d4b6437c00c83d68e7225fdf4440b",
-        "timestamp": "2026-05-01T06:41:14.361489",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 19.3% is 3.1x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "39efff325de53cacc944743d954282b1",
-        "timestamp": "2026-05-01T06:41:32.390358",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 24.7% is 3.9x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "07d290e53e6ea697d029c08f1b7ab35b",
-        "timestamp": "2026-05-01T06:41:32.417656",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 24.6% is 3.9x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "6a38a007b57a6eef96d615e52d810b9f",
-        "timestamp": "2026-05-01T06:41:44.429465",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 24.0% is 3.8x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "3b07842cd9e6edc5d9e5e725c3dd25bc",
-        "timestamp": "2026-05-01T06:41:44.455816",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 24.3% is 3.8x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "85ce7be42ccb29597edfa0e1144911c7",
-        "timestamp": "2026-05-01T06:41:50.448135",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 19.0% is 3.0x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "210546396b06a854cefba1502cd26e80",
-        "timestamp": "2026-05-01T06:41:50.476044",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 19.1% is 3.0x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "7ada3a26001444b980b93736aa3835ef",
-        "timestamp": "2026-05-01T06:42:02.485570",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 20.8% is 3.3x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "03f357445dedab368edcb7d150e81b3a",
-        "timestamp": "2026-05-01T06:42:02.516635",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 20.0% is 3.2x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "dabe3251d6c04ba5cbb08d3d7efb0188",
-        "timestamp": "2026-05-01T06:44:14.971214",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 22.0% is 3.5x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "0b9cdced5fd333db83c8779385929c14",
-        "timestamp": "2026-05-01T06:50:47.960674",
-        "type": "new_process",
-        "process": "kworker/0:1-events",
-        "reason": "New process 'kworker/0:1-events' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "f43a59e58860f9e5e2e0118de633bf4d",
-        "timestamp": "2026-05-01T06:50:47.960674",
-        "type": "new_process",
-        "process": "(udev-worker)",
-        "reason": "New process '(udev-worker)' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "2281e721a4dac7e778f9089e3626a7f1",
-        "timestamp": "2026-05-01T06:50:47.960674",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 27.6% is 4.4x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "09044a48d135c4ca95caa1ddd63103d9",
-        "timestamp": "2026-05-01T06:50:54.189824",
-        "type": "new_process",
-        "process": "kworker/u8:3",
-        "reason": "New process 'kworker/u8:3' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "de14647d5d14441990d445048d96a013",
-        "timestamp": "2026-05-01T06:51:12.287286",
-        "type": "new_process",
-        "process": "kworker/0:1-mm_percpu_wq",
-        "reason": "New process 'kworker/0:1-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "79bafc5a255414c753f1c626a2b73d68",
-        "timestamp": "2026-05-01T06:51:18.315373",
-        "type": "new_process",
-        "process": "kworker/0:1-events_power_efficient",
-        "reason": "New process 'kworker/0:1-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
-        "risk": "low",
-        "status": "pending"
-    },
-    {
-        "id": "6489b06eeff4bd00f6c0086bce8f9520",
-        "timestamp": "2026-05-01T06:51:42.546339",
+        "id": "e1b71684c3252f4d293bc7bb119d9088",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
         "process": "kworker/3:2",
         "reason": "New process 'kworker/3:2' detected during normal hours. This process was not observed in the baseline period.",
@@ -1197,116 +630,98 @@
         "status": "pending"
     },
     {
-        "id": "6e1ec6ed77a7ffa064ed906b47e6fb2e",
-        "timestamp": "2026-05-01T06:51:48.585334",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 32.3% is 5.1x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "c4d99c191c9ba4846b9eb727a8754291",
-        "timestamp": "2026-05-01T06:51:48.788230",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 32.1% is 5.1x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "bc89cf8ba4a7fa56d1c32067aaee5027",
-        "timestamp": "2026-05-01T06:51:54.751690",
+        "id": "9f5fb06e79a7b57a45afb0939c176759",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
-        "process": "kworker/u8:1-writeback",
-        "reason": "New process 'kworker/u8:1-writeback' detected during normal hours. This process was not observed in the baseline period.",
+        "process": "kworker/2:1-events",
+        "reason": "New process 'kworker/2:1-events' detected during normal hours. This process was not observed in the baseline period.",
         "risk": "low",
         "status": "pending"
     },
     {
-        "id": "43c33e48164a127ffef2be38585f8563",
-        "timestamp": "2026-05-01T06:51:54.751690",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 33.5% is 5.3x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "ddb0914a3dd06ddb989e29992dcfa0fc",
-        "timestamp": "2026-05-01T06:51:54.897726",
+        "id": "c20f489c976a816727b1a22ba6e9085a",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "new_process",
-        "process": "kworker/1:2-events",
-        "reason": "New process 'kworker/1:2-events' detected during normal hours. This process was not observed in the baseline period.",
+        "process": "kworker/1:0-cgroup_destroy",
+        "reason": "New process 'kworker/1:0-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
         "risk": "low",
         "status": "pending"
     },
     {
-        "id": "4d52d341223038d30be429368bc60c1f",
-        "timestamp": "2026-05-01T06:51:54.897726",
+        "id": "abd2371c25f4f7b40b7febca89b367c9",
+        "timestamp": "2026-05-01T08:06:39.455774",
+        "type": "new_process",
+        "process": "kworker/u8:3-events_unbound",
+        "reason": "New process 'kworker/u8:3-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "df276a10d924ce5e1c1c5c5b2bc278b7",
+        "timestamp": "2026-05-01T08:06:39.455774",
+        "type": "new_process",
+        "process": "kworker/0:0-events",
+        "reason": "New process 'kworker/0:0-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "4400e82556f30b9911965f01019b7369",
+        "timestamp": "2026-05-01T08:06:39.455774",
+        "type": "new_process",
+        "process": "sudo",
+        "reason": "New process 'sudo' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "2acbc76b92d57765aa93926b2de84929",
+        "timestamp": "2026-05-01T08:06:39.455774",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 35.6% is 5.6x the session average of 6.3%.",
+        "reason": "CPU usage spike: 25.4% is 4.3x the session average of 5.9%.",
         "risk": "high",
         "status": "pending"
     },
     {
-        "id": "eaab70ba5dad5476b3780e63cd1c814e",
-        "timestamp": "2026-05-01T06:52:00.803591",
+        "id": "e93603abf1a453495a0ecce3f1aa9976",
+        "timestamp": "2026-05-01T08:06:45.466297",
+        "type": "new_process",
+        "process": "kworker/u8:0-events_unbound",
+        "reason": "New process 'kworker/u8:0-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "0b3d82c47990b5f8da29c2e76f411f00",
+        "timestamp": "2026-05-01T08:06:45.466297",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 25.8% is 4.1x the session average of 6.3%.",
+        "reason": "CPU usage spike: 20.2% is 3.4x the session average of 5.9%.",
         "risk": "high",
         "status": "pending"
     },
     {
-        "id": "9c46d1023132c75ef87067f8ca5f4ecb",
-        "timestamp": "2026-05-01T06:52:00.939398",
+        "id": "f4fb6e758d182cb1ab5733f50e120c85",
+        "timestamp": "2026-05-01T08:06:51.475336",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 22.5% is 3.6x the session average of 6.3%.",
+        "reason": "CPU usage spike: 25.0% is 4.3x the session average of 5.9%.",
         "risk": "high",
         "status": "pending"
     },
     {
-        "id": "9522b9c7a9c39f2a79832413d88db5a6",
-        "timestamp": "2026-05-01T06:52:12.876032",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 16.3% is 2.6x the session average of 6.3%.",
-        "risk": "medium",
+        "id": "340c558c002e405626fec489b354bd13",
+        "timestamp": "2026-05-01T08:06:57.484534",
+        "type": "new_process",
+        "process": "kworker/1:1-mm_percpu_wq",
+        "reason": "New process 'kworker/1:1-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
         "status": "pending"
     },
     {
-        "id": "1b9272203750a62acd47e40b7f6c3f18",
-        "timestamp": "2026-05-01T06:52:13.029255",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 20.5% is 3.2x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "cfea5c29889a0026224bf06b916e6d9f",
-        "timestamp": "2026-05-01T06:52:18.911632",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 15.5% is 2.4x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "feb353822a15bcf38c44fd288c611f12",
-        "timestamp": "2026-05-01T06:52:19.060325",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 13.1% is 2.1x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "c578a09adfb7b9c4aa22beeaae47df5b",
-        "timestamp": "2026-05-01T06:52:24.954836",
+        "id": "a85fb5f4d7064ae74b0ea486dfff00c8",
+        "timestamp": "2026-05-01T08:07:09.502534",
         "type": "new_process",
         "process": "kworker/u8:1-flush-254:16",
         "reason": "New process 'kworker/u8:1-flush-254:16' detected during normal hours. This process was not observed in the baseline period.",
@@ -1314,62 +729,89 @@
         "status": "pending"
     },
     {
-        "id": "2b4aceb674bd34502237a72bb7a319db",
-        "timestamp": "2026-05-01T06:53:01.213984",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 22.1% is 3.5x the session average of 6.3%.",
-        "risk": "high",
+        "id": "0a338f32b98f36621598f48f9e747443",
+        "timestamp": "2026-05-01T08:07:09.502534",
+        "type": "new_process",
+        "process": "kworker/1:1-events_power_efficient",
+        "reason": "New process 'kworker/1:1-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
         "status": "pending"
     },
     {
-        "id": "867446ade6b9013864a992be632a8440",
-        "timestamp": "2026-05-01T06:53:01.326109",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 28.8% is 4.6x the session average of 6.3%.",
-        "risk": "high",
+        "id": "fbf2d4e2ad11c4980a6c49fc55460e91",
+        "timestamp": "2026-05-01T08:07:09.502534",
+        "type": "new_process",
+        "process": "kworker/3:1-events_power_efficient",
+        "reason": "New process 'kworker/3:1-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
         "status": "pending"
     },
     {
-        "id": "1e790c769e25c3ad0e077582d5b642e2",
-        "timestamp": "2026-05-01T06:53:07.248469",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 24.3% is 3.8x the session average of 6.3%.",
-        "risk": "high",
+        "id": "1d923b30755430c1fcc4a9bb8af636cb",
+        "timestamp": "2026-05-01T08:07:09.502534",
+        "type": "new_process",
+        "process": "kworker/2:1-mm_percpu_wq",
+        "reason": "New process 'kworker/2:1-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
         "status": "pending"
     },
     {
-        "id": "ce77d01859bc7aa51e9737afe2905cba",
-        "timestamp": "2026-05-01T06:53:07.360902",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 23.9% is 3.8x the session average of 6.3%.",
-        "risk": "high",
+        "id": "3ad0cd4b3000b175903b34a853f363be",
+        "timestamp": "2026-05-01T08:07:15.512978",
+        "type": "new_process",
+        "process": "kworker/u8:0-ext4-rsv-conversion",
+        "reason": "New process 'kworker/u8:0-ext4-rsv-conversion' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
         "status": "pending"
     },
     {
-        "id": "1dcc5bece2835bb7bc159d66df27c2d3",
-        "timestamp": "2026-05-01T06:53:55.533949",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 27.6% is 4.4x the session average of 6.3%.",
-        "risk": "high",
+        "id": "3cfc2c3404b75ab9265a921a9505f1ac",
+        "timestamp": "2026-05-01T08:07:15.512978",
+        "type": "new_process",
+        "process": "kworker/3:1-mm_percpu_wq",
+        "reason": "New process 'kworker/3:1-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
         "status": "pending"
     },
     {
-        "id": "c4be959d99fd691080d0ba82f98b0c33",
-        "timestamp": "2026-05-01T06:53:55.658322",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 30.1% is 4.8x the session average of 6.3%.",
-        "risk": "high",
+        "id": "88dfcae6b159144eef0f5d26286beec5",
+        "timestamp": "2026-05-01T08:07:15.512978",
+        "type": "new_process",
+        "process": "kworker/0:0-events_power_efficient",
+        "reason": "New process 'kworker/0:0-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
         "status": "pending"
     },
     {
-        "id": "4a7865bdb6d66e9b9100f6a0f47f888f",
-        "timestamp": "2026-05-01T06:54:01.569967",
+        "id": "b569458beb0d4209b2e614e40b4d9311",
+        "timestamp": "2026-05-01T08:07:57.593224",
+        "type": "new_process",
+        "process": "kworker/u8:1-writeback",
+        "reason": "New process 'kworker/u8:1-writeback' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "01b68afda460c96c977c971ba856042e",
+        "timestamp": "2026-05-01T08:07:57.593224",
+        "type": "new_process",
+        "process": "tail",
+        "reason": "New process 'tail' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "8d76f47fd0e671de7eb8128169243f76",
+        "timestamp": "2026-05-01T08:08:09.615111",
+        "type": "new_process",
+        "process": "kworker/0:0-mm_percpu_wq",
+        "reason": "New process 'kworker/0:0-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "74fb47b3fa101f9eaea9cdb1ea8a0192",
+        "timestamp": "2026-05-01T08:08:27.650147",
         "type": "new_process",
         "process": "kworker/u8:1-ext4-rsv-conversion",
         "reason": "New process 'kworker/u8:1-ext4-rsv-conversion' detected during normal hours. This process was not observed in the baseline period.",
@@ -1377,215 +819,134 @@
         "status": "pending"
     },
     {
-        "id": "bfd75a5bd996b3f326c38d1b65b12b86",
-        "timestamp": "2026-05-01T06:54:07.606642",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 17.0% is 2.7x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "0a8c8b2cf73210f54cd408e07e96a491",
-        "timestamp": "2026-05-01T06:54:07.726073",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 17.7% is 2.8x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "d9719918553be20bef249377311ae1f8",
-        "timestamp": "2026-05-01T06:54:19.681234",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 12.8% is 2.0x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "62ef1b9a8fa48181475a673213c5353e",
-        "timestamp": "2026-05-01T06:54:55.916371",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 21.2% is 3.4x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "c445b0563fe242c6eadac947cb6945a3",
-        "timestamp": "2026-05-01T06:54:56.027509",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 17.9% is 2.8x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "9c4afed35f3f9ca2f4389c1e10ea7421",
-        "timestamp": "2026-05-01T06:54:57.475983",
+        "id": "f178384cf0241438529e8f5ab9296982",
+        "timestamp": "2026-05-01T08:08:45.686028",
         "type": "new_process",
-        "process": "sleep",
-        "reason": "New process 'sleep' detected during normal hours. This process was not observed in the baseline period.",
+        "process": "kworker/u8:0-flush-254:16",
+        "reason": "New process 'kworker/u8:0-flush-254:16' detected during normal hours. This process was not observed in the baseline period.",
         "risk": "low",
         "status": "pending"
     },
     {
-        "id": "f1c37e11eee48e858a515ff8497bcaa4",
-        "timestamp": "2026-05-01T06:55:01.962920",
+        "id": "b08bd694d6ce2ba4fe2334aa87c84982",
+        "timestamp": "2026-05-01T08:08:57.709077",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 21.8% is 3.4x the session average of 6.3%.",
+        "reason": "CPU usage spike: 12.6% is 2.1x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "8484e599050fdf381691fb1f38e22211",
+        "timestamp": "2026-05-01T08:09:33.781971",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 20.3% is 3.5x the session average of 5.9%.",
         "risk": "high",
         "status": "pending"
     },
     {
-        "id": "c6b0494c6f0c7a8a7514665beedfb2fb",
-        "timestamp": "2026-05-01T06:55:02.090681",
+        "id": "339435efd5c70bdb99407d45b23f22fa",
+        "timestamp": "2026-05-01T08:09:39.794342",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 21.2% is 3.4x the session average of 6.3%.",
-        "risk": "high",
+        "reason": "CPU usage spike: 14.6% is 2.5x the session average of 5.9%.",
+        "risk": "medium",
         "status": "pending"
     },
     {
-        "id": "e6147d3bdc22ea7d698203e885eb701c",
-        "timestamp": "2026-05-01T06:55:14.051764",
+        "id": "7869b89a786c071fdeab6f411235ff47",
+        "timestamp": "2026-05-01T08:27:08.664140",
         "type": "new_process",
-        "process": "uvicorn",
-        "reason": "New process 'uvicorn' detected during normal hours. This process was not observed in the baseline period.",
+        "process": "kworker/1:1-cgroup_destroy",
+        "reason": "New process 'kworker/1:1-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
         "risk": "low",
         "status": "pending"
     },
     {
-        "id": "2551a7c46c426aef88f44e8202a87988",
-        "timestamp": "2026-05-01T06:55:14.051764",
+        "id": "e02dd3dbed2a155329cc0d04febb8015",
+        "timestamp": "2026-05-01T08:27:08.664140",
+        "type": "new_process",
+        "process": "kworker/3:1-ipv6_addrconf",
+        "reason": "New process 'kworker/3:1-ipv6_addrconf' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "a2024ce817afd7c1216b233611cfa934",
+        "timestamp": "2026-05-01T08:27:08.664140",
+        "type": "new_process",
+        "process": "kworker/1:2-events_power_efficient",
+        "reason": "New process 'kworker/1:2-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "2c079bde2a5d42571d2653275034b2ec",
+        "timestamp": "2026-05-01T08:27:14.864410",
+        "type": "new_process",
+        "process": "kworker/1:2-events",
+        "reason": "New process 'kworker/1:2-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "50424ba40ad54548e42833fd90b07503",
+        "timestamp": "2026-05-01T08:27:20.887457",
+        "type": "new_process",
+        "process": "kworker/1:2-mm_percpu_wq",
+        "reason": "New process 'kworker/1:2-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "ac92a76c955b8f1abad541ade72a7d19",
+        "timestamp": "2026-05-01T08:28:03.149486",
+        "type": "new_process",
+        "process": "kworker/3:0",
+        "reason": "New process 'kworker/3:0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "73aa86b4e748de9ad309764d7d4ec734",
+        "timestamp": "2026-05-01T08:28:03.149486",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 18.6% is 2.9x the session average of 6.3%.",
+        "reason": "CPU usage spike: 24.7% is 4.2x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "9d18b9f79fc969365905de5f5dd80635",
+        "timestamp": "2026-05-01T08:28:15.197085",
+        "type": "new_process",
+        "process": "kworker/2:2-events",
+        "reason": "New process 'kworker/2:2-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "ed424c1fee33fe6f4a480aa4db4a228d",
+        "timestamp": "2026-05-01T08:28:15.197085",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 14.3% is 2.4x the session average of 5.9%.",
         "risk": "medium",
         "status": "pending"
     },
     {
-        "id": "54378f91b9d2656889640945573985e5",
-        "timestamp": "2026-05-01T06:55:14.166636",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 16.2% is 2.6x the session average of 6.3%.",
-        "risk": "medium",
+        "id": "44131754b8d0af04c8038bce7c742115",
+        "timestamp": "2026-05-01T08:28:21.222675",
+        "type": "new_process",
+        "process": "kworker/2:2-mm_percpu_wq",
+        "reason": "New process 'kworker/2:2-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
         "status": "pending"
     },
     {
-        "id": "a7e80a11e1629968228bcb89de5c392d",
-        "timestamp": "2026-05-01T06:55:44.251907",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 23.8% is 3.8x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "e38ca5d0c081dafc63ab8f1725cf3afa",
-        "timestamp": "2026-05-01T06:55:44.349815",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 24.1% is 3.8x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "49d3dcf6f7ab97a68b769a4cbdbca6e0",
-        "timestamp": "2026-05-01T06:55:56.330386",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 13.5% is 2.1x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "b48d105788c2405327e6904d0425815a",
-        "timestamp": "2026-05-01T06:55:56.427439",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 17.1% is 2.7x the session average of 6.3%.",
-        "risk": "medium",
-        "status": "pending"
-    },
-    {
-        "id": "a3a2bb45aad40fab92c25496f5697a28",
-        "timestamp": "2026-05-01T06:56:08.414115",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 23.6% is 3.7x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "1a837b068ef3087a6cb84b49a49b9dcd",
-        "timestamp": "2026-05-01T06:56:08.507710",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 24.0% is 3.8x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "032cd6f26a3f0fe40c1984c9accad209",
-        "timestamp": "2026-05-01T06:56:32.580719",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 24.3% is 3.8x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "66108f97ff3d72e1c34c7a6bf186c6a1",
-        "timestamp": "2026-05-01T06:56:32.679247",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 23.4% is 3.7x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "64025f6fac4d3d0a0a79f96f266e53a5",
-        "timestamp": "2026-05-01T06:56:38.624458",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 23.5% is 3.7x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "7bc725e85aa2a0ed132f44eff9b364a9",
-        "timestamp": "2026-05-01T06:56:38.721609",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 23.7% is 3.7x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "2f38eabf6773300b31719d95ab65210f",
-        "timestamp": "2026-05-01T06:56:44.671440",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 36.9% is 5.8x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "8993bd516afeed322a78bdf4e51c48a5",
-        "timestamp": "2026-05-01T06:56:44.762755",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 39.8% is 6.3x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "4914092f356a0cb40fede78c74f5778e",
-        "timestamp": "2026-05-01T06:56:50.716515",
+        "id": "f025ea3c37ca507a4d1f55f632f86669",
+        "timestamp": "2026-05-01T08:28:21.222675",
         "type": "new_process",
         "process": "kworker/u8:3-ext4-rsv-conversion",
         "reason": "New process 'kworker/u8:3-ext4-rsv-conversion' detected during normal hours. This process was not observed in the baseline period.",
@@ -1593,26 +954,134 @@
         "status": "pending"
     },
     {
-        "id": "ce95f1f6e530e4fc9cc8c016dd89c306",
-        "timestamp": "2026-05-01T06:57:26.998892",
+        "id": "8dece7346a3b453b82f59b7ae8a5e615",
+        "timestamp": "2026-05-01T08:28:21.222675",
+        "type": "new_process",
+        "process": "kworker/u8:2-flush-254:16",
+        "reason": "New process 'kworker/u8:2-flush-254:16' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "b86e8723ace3ec2b9003b99839511859",
+        "timestamp": "2026-05-01T08:28:27.238945",
+        "type": "new_process",
+        "process": "kworker/u8:2-writeback",
+        "reason": "New process 'kworker/u8:2-writeback' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "6768a0fd2c599f1ce76e8fc30c1df9e7",
+        "timestamp": "2026-05-01T08:28:33.265513",
+        "type": "new_process",
+        "process": "kworker/u8:2-events_unbound",
+        "reason": "New process 'kworker/u8:2-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "0cede5eb08a3fa16e9eb62eae5873eda",
+        "timestamp": "2026-05-01T08:28:51.320211",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 18.3% is 2.9x the session average of 6.3%.",
+        "reason": "CPU usage spike: 15.1% is 2.6x the session average of 5.9%.",
         "risk": "medium",
         "status": "pending"
     },
     {
-        "id": "13b800958fc316bb6ae6ce5e19cdbcf8",
-        "timestamp": "2026-05-01T06:57:27.074242",
+        "id": "3f764d5007f6c1817bf7a14521abc950",
+        "timestamp": "2026-05-01T08:28:51.430414",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 21.3% is 3.4x the session average of 6.3%.",
+        "reason": "CPU usage spike: 20.6% is 3.5x the session average of 5.9%.",
         "risk": "high",
         "status": "pending"
     },
     {
-        "id": "48e385839aea1821c24405a7993d2a15",
-        "timestamp": "2026-05-01T06:57:33.044554",
+        "id": "860f53d501600388b3601a079d545281",
+        "timestamp": "2026-05-01T08:28:57.336972",
+        "type": "new_process",
+        "process": "kworker/u8:3-flush-254:16",
+        "reason": "New process 'kworker/u8:3-flush-254:16' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "0785e1dc8607bc90730710908f079093",
+        "timestamp": "2026-05-01T08:29:15.393481",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 24.3% is 4.1x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "e6c13f255e0aff3feb1d7bf335f61838",
+        "timestamp": "2026-05-01T08:29:15.507475",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 18.0% is 3.1x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "570e69fb6e9473f3349860f44b6b41bc",
+        "timestamp": "2026-05-01T08:30:03.580615",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.1% is 3.8x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "4cceb28049bdb0c9833b46235b8b025d",
+        "timestamp": "2026-05-01T08:30:03.671458",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.9% is 3.9x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "1f0fed5723831b4c456691686f5403b3",
+        "timestamp": "2026-05-01T08:30:17.961821",
+        "type": "new_process",
+        "process": "kworker/3:0-cgroup_destroy",
+        "reason": "New process 'kworker/3:0-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "64428845974be8ebc1b8c6c6630c89e6",
+        "timestamp": "2026-05-01T08:30:17.961821",
+        "type": "new_process",
+        "process": "inotifywait",
+        "reason": "New process 'inotifywait' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "bcc09232e62e528faaf25d7836e278e7",
+        "timestamp": "2026-05-01T08:30:17.961821",
+        "type": "new_process",
+        "process": "sleep",
+        "reason": "New process 'sleep' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low",
+        "status": "pending"
+    },
+    {
+        "id": "f70935af988625f51b83ef8781265a1b",
+        "timestamp": "2026-05-01T08:30:17.961821",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.5% is 3.8x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "f95c07844dc4b76c80485f06e6790fcf",
+        "timestamp": "2026-05-01T08:30:37.030757",
         "type": "new_process",
         "process": "kworker/u8:3-writeback",
         "reason": "New process 'kworker/u8:3-writeback' detected during normal hours. This process was not observed in the baseline period.",
@@ -1620,92 +1089,407 @@
         "status": "pending"
     },
     {
-        "id": "32baabb8275fabfae1a5576a2ecdae26",
-        "timestamp": "2026-05-01T06:57:33.044554",
+        "id": "7b175dca8f4cdbf988b3e9285910e396",
+        "timestamp": "2026-05-01T08:31:03.847041",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 23.6% is 3.7x the session average of 6.3%.",
+        "reason": "CPU usage spike: 39.5% is 6.7x the session average of 5.9%.",
         "risk": "high",
         "status": "pending"
     },
     {
-        "id": "cf4a460422cbd4cb7228a1f632faf899",
-        "timestamp": "2026-05-01T06:57:33.114359",
+        "id": "6310a012c067995f46581a8be6004fb0",
+        "timestamp": "2026-05-01T08:31:03.895961",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 23.8% is 3.8x the session average of 6.3%.",
+        "reason": "CPU usage spike: 41.3% is 7.0x the session average of 5.9%.",
         "risk": "high",
         "status": "pending"
     },
     {
-        "id": "9593ae99fff02749aa56461932eb3531",
-        "timestamp": "2026-05-01T06:57:39.164530",
+        "id": "2b9446229341d460d5fdfa2e2ce442c5",
+        "timestamp": "2026-05-01T08:31:13.170302",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 23.4% is 4.0x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "50bcbf4f5f9c625f4fa45918276a4686",
+        "timestamp": "2026-05-01T08:31:15.893895",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 20.4% is 3.5x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "bd1313ebdcb4599c021f14c1ce30fed6",
+        "timestamp": "2026-05-01T08:31:15.942318",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 20.5% is 3.5x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "0721cfae52e1e9f1cc1f9351390c98ea",
+        "timestamp": "2026-05-01T08:31:21.922791",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 25.0% is 4.3x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "c3d2d00256e09f259f6d256c14aa3130",
+        "timestamp": "2026-05-01T08:31:21.975531",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 25.8% is 4.4x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "9db8b24456621ae7e8cec9eb5e4bbc63",
+        "timestamp": "2026-05-01T08:31:25.216551",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 25.8% is 4.4x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "d4452769c23b900c81847fc15aee7f08",
+        "timestamp": "2026-05-01T08:31:27.979167",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 23.2% is 4.0x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "14c785053302f43d31bbc42381bb80b2",
+        "timestamp": "2026-05-01T08:31:28.018338",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 24.1% is 4.1x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "8c9f3d4c4fd128a0ddd14130b9a42637",
+        "timestamp": "2026-05-01T08:31:34.004043",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.2% is 3.8x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "6cee9d76ac92e7060f795fdd7fbca8cb",
+        "timestamp": "2026-05-01T08:31:34.043763",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 20.6% is 3.5x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "53a13b77fb89568c7e3b3bb80fc9eb63",
+        "timestamp": "2026-05-01T08:31:37.266051",
         "type": "new_process",
-        "process": "git",
-        "reason": "New process 'git' detected during normal hours. This process was not observed in the baseline period.",
+        "process": "kworker/u8:2-ext4-rsv-conversion",
+        "reason": "New process 'kworker/u8:2-ext4-rsv-conversion' detected during normal hours. This process was not observed in the baseline period.",
         "risk": "low",
         "status": "pending"
     },
     {
-        "id": "469981aa7b42e312857dfc85581b841c",
-        "timestamp": "2026-05-01T06:57:45.133305",
+        "id": "1d52084464e452e05d85bbdd33564e4b",
+        "timestamp": "2026-05-01T08:31:37.266051",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 13.0% is 2.1x the session average of 6.3%.",
+        "reason": "CPU usage spike: 13.3% is 2.3x the session average of 5.9%.",
         "risk": "medium",
         "status": "pending"
     },
     {
-        "id": "43e217bab98ce00fcc16cd420c1899c0",
-        "timestamp": "2026-05-01T06:57:45.213356",
+        "id": "cdc1d2c8de662cc340f0808bb82c2e65",
+        "timestamp": "2026-05-01T08:31:40.030334",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 13.6% is 2.1x the session average of 6.3%.",
+        "reason": "CPU usage spike: 14.0% is 2.4x the session average of 5.9%.",
         "risk": "medium",
         "status": "pending"
     },
     {
-        "id": "cac8af0c03d655c9a4d437b876c805f0",
-        "timestamp": "2026-05-01T06:58:03.258884",
+        "id": "411e522176777119a6ec731c00d4c9e3",
+        "timestamp": "2026-05-01T08:31:40.075205",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 14.0% is 2.4x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "46d531666849e55b255f9a9cf90f2fdb",
+        "timestamp": "2026-05-01T08:31:43.293309",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 15.6% is 2.7x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "9d89dad8ebce9899d46f6eca4a616ab3",
+        "timestamp": "2026-05-01T08:31:46.058934",
         "type": "new_process",
-        "process": "kworker/0:1-rcu_gp",
-        "reason": "New process 'kworker/0:1-rcu_gp' detected during normal hours. This process was not observed in the baseline period.",
+        "process": "kworker/2:2+events",
+        "reason": "New process 'kworker/2:2+events' detected during normal hours. This process was not observed in the baseline period.",
         "risk": "low",
         "status": "pending"
     },
     {
-        "id": "264aff6aede848e50e8701bbbfd4a196",
-        "timestamp": "2026-05-01T06:58:03.258884",
+        "id": "df95cc44dc2323554eacffc319fd291a",
+        "timestamp": "2026-05-01T08:31:46.058934",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 34.3% is 5.8x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "3a65f390d276be68eb079cbc81cd0918",
+        "timestamp": "2026-05-01T08:31:46.101190",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 34.9% is 5.9x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "e03fd1f2f00b55d1ec2568e3fa48f125",
+        "timestamp": "2026-05-01T08:32:49.696669",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 16.1% is 2.7x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "d5bfc5d9ae4f2f5b810f6a3e08bab484",
+        "timestamp": "2026-05-01T08:32:52.440883",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 14.5% is 2.5x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "3624f74fadf2b5da827a7a17438e9174",
+        "timestamp": "2026-05-01T08:32:52.525606",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 14.9% is 2.5x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "26b4f499fa1a6947455d862c6452b064",
+        "timestamp": "2026-05-01T08:32:55.735721",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 18.8% is 3.2x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "419974fdac3b5e51a18a2ede6d7c6861",
+        "timestamp": "2026-05-01T08:32:58.470874",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 26.6% is 4.5x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "ddb2b9efc21af36540435578ea7db8d3",
+        "timestamp": "2026-05-01T08:32:58.558433",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 26.1% is 4.4x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "9ebb155b88760fddab3d8854fc6bd863",
+        "timestamp": "2026-05-01T08:33:04.500810",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 44.2% is 7.5x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "0a28c828f3683dca95c5318a1870768a",
+        "timestamp": "2026-05-01T08:33:04.588560",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 42.6% is 7.3x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "fe9a2efcca50e3238b1f32c33e1093b0",
+        "timestamp": "2026-05-01T08:33:10.541659",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 21.0% is 3.6x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "2fdf3d238cf4bda6918f110ed36eee6f",
+        "timestamp": "2026-05-01T08:33:10.622481",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 23.2% is 4.0x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "706c38c8e79cb34a04e8c06dcb0e3e92",
+        "timestamp": "2026-05-01T08:33:13.829811",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 25.1% is 4.3x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "6b994cda92d27d3892ee425a253caaaf",
+        "timestamp": "2026-05-01T08:33:19.858252",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 18.3% is 3.1x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "4dd75e0101485cea8ba03b2f3c57d8b5",
+        "timestamp": "2026-05-01T08:33:28.735580",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 12.6% is 2.1x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "df002cf091d0fcb15f54d9458815c603",
+        "timestamp": "2026-05-01T08:34:16.943807",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 16.4% is 2.8x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "d6d1a65bafe8b93797371b71d995d586",
+        "timestamp": "2026-05-01T08:34:17.036819",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 20.4% is 3.5x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "2c694ef3b2bee80bff7dec6c34b66bcb",
+        "timestamp": "2026-05-01T08:34:29.011977",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 19.1% is 3.3x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "1102ca28007d371a071ca51282bafc16",
+        "timestamp": "2026-05-01T08:34:29.111006",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 20.4% is 3.5x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "3cd1c2fd9c098786ed25a6152f6fcfab",
+        "timestamp": "2026-05-01T08:34:35.048802",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 16.8% is 2.9x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "8d11c5f96957fc02088a8ed2e76cd9d7",
+        "timestamp": "2026-05-01T08:34:35.145226",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 19.7% is 3.4x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "45f794d37048583c5badfe312976d62c",
+        "timestamp": "2026-05-01T08:34:38.322454",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.8% is 3.9x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "327a75c13cb6a5aa2ec08487c3a36944",
+        "timestamp": "2026-05-01T08:35:26.634573",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 19.8% is 3.4x the session average of 5.9%.",
+        "risk": "high",
+        "status": "pending"
+    },
+    {
+        "id": "aac6b92f7a99739cae7e865a5b7476a2",
+        "timestamp": "2026-05-01T08:35:32.670187",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 13.3% is 2.3x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "c39c905605286d92293bc58e92b5d2c5",
+        "timestamp": "2026-05-01T08:35:44.737081",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 17.3% is 2.9x the session average of 5.9%.",
+        "risk": "medium",
+        "status": "pending"
+    },
+    {
+        "id": "b54dd4731e71022ca2c899f55522f511",
+        "timestamp": "2026-05-01T08:35:50.781017",
         "type": "new_process",
-        "process": "kworker/2:1-rcu_gp",
-        "reason": "New process 'kworker/2:1-rcu_gp' detected during normal hours. This process was not observed in the baseline period.",
+        "process": "uvicorn",
+        "reason": "New process 'uvicorn' detected during normal hours. This process was not observed in the baseline period.",
         "risk": "low",
         "status": "pending"
     },
     {
-        "id": "aa532d685ddb61317534283584feafc9",
-        "timestamp": "2026-05-01T06:58:03.258884",
+        "id": "b4840ff4b816a9b5bf8996015cc77df8",
+        "timestamp": "2026-05-01T08:35:50.781017",
         "type": "cpu_spike",
         "process": "System Wide",
-        "reason": "CPU usage spike: 32.8% is 5.2x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "0aef47545b32e1985fcfbc7c801c4c0c",
-        "timestamp": "2026-05-01T06:58:03.340963",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 34.3% is 5.4x the session average of 6.3%.",
-        "risk": "high",
-        "status": "pending"
-    },
-    {
-        "id": "4f8dd499293057da851950bc6330bd6a",
-        "timestamp": "2026-05-01T06:58:04.347720",
-        "type": "cpu_spike",
-        "process": "System Wide",
-        "reason": "CPU usage spike: 23.4% is 3.7x the session average of 6.3%.",
+        "reason": "CPU usage spike: 32.6% is 5.6x the session average of 5.9%.",
         "risk": "high",
         "status": "pending"
     }

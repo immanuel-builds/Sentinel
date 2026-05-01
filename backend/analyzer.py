@@ -25,9 +25,10 @@ def analyze():
     output_file = os.path.join(data_dir, 'anomalies.json')
 
     # Load existing anomalies to preserve statuses
+    # This ensures that if a user marked an anomaly as 'reviewed', it stays 'reviewed'
     existing_anomalies = {a['id']: a.get('status', 'pending') for a in load_json(output_file, []) if 'id' in a}
 
-    # 1. Read the file "activity_log.json"
+    # 1. Read the raw activity logs
     data = load_json(input_file, [])
 
     if not isinstance(data, list) or not data:
@@ -40,7 +41,8 @@ def analyze():
     except Exception:
         pass
 
-    # 2. Build a baseline
+    # 2. Build a behavioral baseline
+    # We use the first portion of the logs to define 'normal' hours of activity
     baseline_size = min(10, max(1, len(data) // 2))
     baseline_sample = data[:baseline_size]
 
@@ -118,6 +120,7 @@ def analyze():
             })
 
         # C. CPU Spike Detection
+        # Detects spikes that are significantly higher than the session average
         if cpu > avg_cpu * 2 and cpu > 5:
             multiplier = cpu / avg_cpu if avg_cpu > 0 else 0
             risk = "high" if multiplier >= 3 else "medium"

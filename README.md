@@ -1,74 +1,74 @@
-# Rule-Based Behavior Tracking System
+# Sentinel — Behavior-Based Anomaly Tracker
 
-A minimal security monitoring system that tracks system activity, detects anomalies through rule-based heuristics (CPU spikes, off-hours activity), and provides an interactive dashboard.
+## Overview
+Sentinel is a minimal, rule-based security monitoring system designed to track local system behavior and flag irregularities. It provides a lightweight alternative to heavy monitoring suites, focusing on process execution patterns and resource utilization anomalies.
 
-## Project Structure
+## Features
+- **Behavioral Baselines**: Automatically establishes a baseline of "normal" activity hours to detect off-hours execution.
+- **CPU Spike Detection**: Monitors system-wide CPU usage and flags spikes that deviate significantly from the session average.
+- **Process Tracking**: Identifies and alerts on the appearance of new processes not observed during the initial baseline period.
+- **Interactive Dashboard**: A real-time web interface for monitoring statistics, reviewing detailed logs, and managing anomaly states (Pending vs. Reviewed).
+- **Persistent Management**: User-reviewed anomaly statuses are preserved across analysis cycles using stable MD5-based identifiers.
 
-- `backend/`: FastAPI server and Rule-Based Analyzer.
-- `collector/`: System activity logger using `psutil`.
-- `data/`: Centralized JSON storage for activity logs and detected anomalies.
-- `frontend/`: Vanilla JavaScript dashboard with real-time updates and interactive controls.
-- `runner.py`: Root-level automation script orchestrating the collection and analysis pipeline.
+## Architecture
+- **Collector**: A background utility using `psutil` to sample system processes and CPU usage at regular intervals.
+- **Analyzer**: A heuristic-driven engine that processes raw logs, builds behavioral baselines, and generates structured anomalies.
+- **Backend**: A FastAPI-based REST layer that serves JSON data from local storage and handles state updates for anomalies.
+- **Frontend**: A clean, vanilla JavaScript dashboard featuring real-time data fetching, advanced filtering, and search capabilities.
 
-## Getting Started
+## Setup Instructions
 
-1. **Install Dependencies:**
-   ```bash
-   pip install fastapi uvicorn psutil
-   ```
+### 1. Install dependencies
+Ensure you have Python 3.8+ installed, then run:
+```bash
+pip install -r requirements.txt
+```
 
-2. **Start the Backend:**
-   ```bash
-   uvicorn backend.main:app --reload
-   ```
+### 2. Run backend
+Start the API server to serve logs and anomalies:
+```bash
+uvicorn backend.main:app --reload
+```
 
-3. **Run the Automation Pipeline:**
-   In a separate terminal, start the continuous monitoring cycle:
-   ```bash
-   python runner.py
-   ```
+### 3. Run collector/analyzer loop
+Start the automated data collection and analysis pipeline in a separate terminal:
+```bash
+python runner.py
+```
 
-4. **View the Dashboard:**
-   Open `frontend/index.html` in your web browser.
+### 4. Open frontend
+Simply open the dashboard in your web browser:
+```text
+frontend/index.html
+```
 
-## API Endpoints
+## Example Anomalies
 
-- `GET /logs`: Returns full list of raw system logs.
-- `GET /anomalies`: Returns full list of detected anomalies.
-- `GET /summary`: Returns high-level statistics (total events, anomaly count, unique processes).
-- `PATCH /anomalies/{id}`: Updates an anomaly's status. Accepts JSON: `{"status": "reviewed"}`.
-
-## Anomaly Data Structure
-
-Each anomaly entry in `data/anomalies.json` follows this schema:
+**New Process Detection**
 ```json
 {
-    "id": "md5_hash_string",
-    "timestamp": "ISO-8601-string",
-    "type": "cpu_spike | new_process | time_anomaly",
-    "process": "process_name | System Wide",
-    "reason": "Human-readable explanation of the alert",
-    "risk": "low | medium | high",
-    "status": "pending | reviewed"
+    "id": "2802d8f75486c5dde80e9a746b2ade3e",
+    "type": "new_process",
+    "process": "systemd",
+    "reason": "New process 'systemd' detected during normal hours. This process was not observed in the baseline period.",
+    "risk": "low",
+    "status": "pending"
 }
 ```
 
-## Anomaly Lifecycle
-
-1. **Detection**: The `analyzer.py` script identifies unusual patterns and flags them as anomalies with a default status of `pending`.
-2. **Review**: Security analysts use the dashboard to inspect alerts. Clicking "Mark as Reviewed" sends a `PATCH` request to the backend.
-3. **Persistence**: The updated status is saved to disk. Subsequent analysis runs match existing anomalies by their unique `id` and preserve their reviewed status, ensuring work is not lost.
-
-## Core Features
-
-- **Rule-Based Analysis**: Detects CPU spikes relative to session averages and identifies off-hours activity based on automated temporal baselining.
-- **State Management**: Persistent anomaly statuses that survive system restarts and analysis cycles.
-- **Real-time Visualization**: Dashboard auto-refreshes every 7 seconds to display the latest system state.
-- **Client-Side Filtering**: Powerful search and status filters for both logs and anomalies. Filtering happens instantly in the browser without additional backend requests.
-- **Data Integrity**: Uses atomic JSON writes with temporary files to prevent data corruption during simultaneous read/write operations.
+**Resource Usage Spike**
+```json
+{
+    "id": "2acbc76b92d57765aa93926b2de84929",
+    "type": "cpu_spike",
+    "process": "System Wide",
+    "reason": "CPU usage spike: 25.4% is 5.8x the session average of 4.4%.",
+    "risk": "high",
+    "status": "pending"
+}
+```
 
 ## Limitations
-
-- **No Signature Matching**: This system does not use a database of known malware signatures (antivirus).
-- **Rule-Based Only**: It relies on fixed heuristics (CPU usage, time of day) rather than complex machine learning models.
-- **Local Scope**: Monitoring is limited to the local machine's process list and CPU utilization.
+- **Rule-Based Heuristics**: Detection is based on fixed rules (CPU limits, time ranges) and lacks advanced machine learning or behavioral modeling.
+- **Interval-Based**: The system captures snapshots of activity rather than high-frequency real-time event streaming.
+- **Local Scope**: Monitoring is restricted to process execution and CPU utilization; it does not perform deep network packet inspection or file integrity monitoring.
