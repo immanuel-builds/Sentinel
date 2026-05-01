@@ -1,13 +1,12 @@
 """
 Behavioral Tracking System API
-To run the server: uvicorn main:app --reload
+To run the server: uvicorn backend.main:app --reload
 """
 
-import json
 import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from typing import Any
+from .utils import load_json
 
 app = FastAPI()
 
@@ -20,37 +19,25 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-ACTIVITY_LOG_FILE = "activity_log.json"
-ANOMALIES_FILE = "anomalies.json"
-
-def load_json_file(filepath: str, default_value: Any) -> Any:
-    """Safely load a JSON file, returning a default value if file is missing, empty, or malformed."""
-    if not os.path.exists(filepath):
-        return default_value
-    try:
-        with open(filepath, "r") as f:
-            content = f.read().strip()
-            if not content:
-                return default_value
-            return json.loads(content)
-    except (json.JSONDecodeError, IOError):
-        return default_value
+DATA_DIR = "data"
+ACTIVITY_LOG_FILE = os.path.join(DATA_DIR, "activity_log.json")
+ANOMALIES_FILE = os.path.join(DATA_DIR, "anomalies.json")
 
 @app.get("/logs")
 def get_logs():
-    """Return the full list of log entries from activity_log.json."""
-    return load_json_file(ACTIVITY_LOG_FILE, [])
+    """Return the full list of log entries from data/activity_log.json."""
+    return load_json(ACTIVITY_LOG_FILE, [])
 
 @app.get("/anomalies")
 def get_anomalies():
-    """Return the full list of anomalies from anomalies.json."""
-    return load_json_file(ANOMALIES_FILE, [])
+    """Return the full list of anomalies from data/anomalies.json."""
+    return load_json(ANOMALIES_FILE, [])
 
 @app.get("/summary")
 def get_summary():
     """Return summary statistics across logs and anomalies."""
-    logs = load_json_file(ACTIVITY_LOG_FILE, [])
-    anomalies = load_json_file(ANOMALIES_FILE, [])
+    logs = load_json(ACTIVITY_LOG_FILE, [])
+    anomalies = load_json(ANOMALIES_FILE, [])
 
     unique_processes = set()
     for entry in logs:

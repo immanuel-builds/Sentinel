@@ -1,0 +1,1038 @@
+[
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "systemd",
+        "reason": "New process 'systemd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kthreadd",
+        "reason": "New process 'kthreadd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "pool_workqueue_release",
+        "reason": "New process 'pool_workqueue_release' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-rcu_g",
+        "reason": "New process 'kworker/R-rcu_g' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-rcu_p",
+        "reason": "New process 'kworker/R-rcu_p' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-slub_",
+        "reason": "New process 'kworker/R-slub_' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-netns",
+        "reason": "New process 'kworker/R-netns' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/0:0H-events_highpri",
+        "reason": "New process 'kworker/0:0H-events_highpri' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-mm_pe",
+        "reason": "New process 'kworker/R-mm_pe' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "rcu_tasks_kthread",
+        "reason": "New process 'rcu_tasks_kthread' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "rcu_tasks_trace_kthread",
+        "reason": "New process 'rcu_tasks_trace_kthread' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "ksoftirqd/0",
+        "reason": "New process 'ksoftirqd/0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "rcu_preempt",
+        "reason": "New process 'rcu_preempt' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "migration/0",
+        "reason": "New process 'migration/0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "cpuhp/0",
+        "reason": "New process 'cpuhp/0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "cpuhp/1",
+        "reason": "New process 'cpuhp/1' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "migration/1",
+        "reason": "New process 'migration/1' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "ksoftirqd/1",
+        "reason": "New process 'ksoftirqd/1' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/1:0H-events_highpri",
+        "reason": "New process 'kworker/1:0H-events_highpri' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "cpuhp/2",
+        "reason": "New process 'cpuhp/2' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "migration/2",
+        "reason": "New process 'migration/2' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "ksoftirqd/2",
+        "reason": "New process 'ksoftirqd/2' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/2:0-events",
+        "reason": "New process 'kworker/2:0-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/2:0H-kblockd",
+        "reason": "New process 'kworker/2:0H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "cpuhp/3",
+        "reason": "New process 'cpuhp/3' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "migration/3",
+        "reason": "New process 'migration/3' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "ksoftirqd/3",
+        "reason": "New process 'ksoftirqd/3' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/3:0H-events_highpri",
+        "reason": "New process 'kworker/3:0H-events_highpri' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kdevtmpfs",
+        "reason": "New process 'kdevtmpfs' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-inet_",
+        "reason": "New process 'kworker/R-inet_' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "oom_reaper",
+        "reason": "New process 'oom_reaper' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-write",
+        "reason": "New process 'kworker/R-write' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kcompactd0",
+        "reason": "New process 'kcompactd0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "ksmd",
+        "reason": "New process 'ksmd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "khugepaged",
+        "reason": "New process 'khugepaged' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-crypt",
+        "reason": "New process 'kworker/R-crypt' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-kbloc",
+        "reason": "New process 'kworker/R-kbloc' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/0:1H-kblockd",
+        "reason": "New process 'kworker/0:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kswapd0",
+        "reason": "New process 'kswapd0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-kthro",
+        "reason": "New process 'kworker/R-kthro' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/2:2-events",
+        "reason": "New process 'kworker/2:2-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "irq/24-ACPI:Ged",
+        "reason": "New process 'irq/24-ACPI:Ged' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-acpi_",
+        "reason": "New process 'kworker/R-acpi_' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-mld",
+        "reason": "New process 'kworker/R-mld' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-ipv6_",
+        "reason": "New process 'kworker/R-ipv6_' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/1:1H-kblockd",
+        "reason": "New process 'kworker/1:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-kstrp",
+        "reason": "New process 'kworker/R-kstrp' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/3:1H-kblockd",
+        "reason": "New process 'kworker/3:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/2:1H-kblockd",
+        "reason": "New process 'kworker/2:1H-kblockd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "jbd2/vdb-8",
+        "reason": "New process 'jbd2/vdb-8' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/R-ext4-",
+        "reason": "New process 'kworker/R-ext4-' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "systemd-journald",
+        "reason": "New process 'systemd-journald' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/3:3-events",
+        "reason": "New process 'kworker/3:3-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "systemd-udevd",
+        "reason": "New process 'systemd-udevd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "dbus-daemon",
+        "reason": "New process 'dbus-daemon' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "systemd-logind",
+        "reason": "New process 'systemd-logind' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "agetty",
+        "reason": "New process 'agetty' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "containerd",
+        "reason": "New process 'containerd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "sshd",
+        "reason": "New process 'sshd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "socat",
+        "reason": "New process 'socat' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "(sd-pam)",
+        "reason": "New process '(sd-pam)' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "dockerd",
+        "reason": "New process 'dockerd' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "tmux: server",
+        "reason": "New process 'tmux: server' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/0:1-cgroup_destroy",
+        "reason": "New process 'kworker/0:1-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/1:0-events",
+        "reason": "New process 'kworker/1:0-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/u8:1-writeback",
+        "reason": "New process 'kworker/u8:1-writeback' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "python3",
+        "reason": "New process 'python3' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "bash",
+        "reason": "New process 'bash' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/1:1-events",
+        "reason": "New process 'kworker/1:1-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/3:1",
+        "reason": "New process 'kworker/3:1' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/0:0-cgroup_destroy",
+        "reason": "New process 'kworker/0:0-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/u8:0-events_unbound",
+        "reason": "New process 'kworker/u8:0-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/u8:2-events_unbound",
+        "reason": "New process 'kworker/u8:2-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/0:2-events",
+        "reason": "New process 'kworker/0:2-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/3:0",
+        "reason": "New process 'kworker/3:0' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/u8:3",
+        "reason": "New process 'kworker/u8:3' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "kworker/2:1",
+        "reason": "New process 'kworker/2:1' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "inotifywait",
+        "reason": "New process 'inotifywait' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "tail",
+        "reason": "New process 'tail' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "uvicorn",
+        "reason": "New process 'uvicorn' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "new_process",
+        "process": "sleep",
+        "reason": "New process 'sleep' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:32.349382",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 20.0% is 2.1x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:51.389659",
+        "type": "new_process",
+        "process": "kworker/2:0-mm_percpu_wq",
+        "reason": "New process 'kworker/2:0-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:51.389659",
+        "type": "new_process",
+        "process": "kworker/3:3-mm_percpu_wq",
+        "reason": "New process 'kworker/3:3-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:51.389659",
+        "type": "new_process",
+        "process": "kworker/1:1-events_power_efficient",
+        "reason": "New process 'kworker/1:1-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:51.389659",
+        "type": "new_process",
+        "process": "kworker/u8:0-flush-254:16",
+        "reason": "New process 'kworker/u8:0-flush-254:16' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:57.405646",
+        "type": "new_process",
+        "process": "kworker/u8:1-events_unbound",
+        "reason": "New process 'kworker/u8:1-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:26:57.405646",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 26.9% is 2.8x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:27:03.415304",
+        "type": "new_process",
+        "process": "kworker/u8:1-flush-254:16",
+        "reason": "New process 'kworker/u8:1-flush-254:16' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:27:09.424947",
+        "type": "new_process",
+        "process": "kworker/1:1-mm_percpu_wq",
+        "reason": "New process 'kworker/1:1-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:27:15.434561",
+        "type": "new_process",
+        "process": "kworker/u8:2-flush-254:16",
+        "reason": "New process 'kworker/u8:2-flush-254:16' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:27:15.434561",
+        "type": "new_process",
+        "process": "sudo",
+        "reason": "New process 'sudo' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:27:21.447765",
+        "type": "new_process",
+        "process": "git",
+        "reason": "New process 'git' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:27:21.447765",
+        "type": "new_process",
+        "process": "wc",
+        "reason": "New process 'wc' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:27:27.458060",
+        "type": "new_process",
+        "process": "kworker/u8:2-writeback",
+        "reason": "New process 'kworker/u8:2-writeback' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:27:39.477961",
+        "type": "new_process",
+        "process": "kworker/0:2-mm_percpu_wq",
+        "reason": "New process 'kworker/0:2-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:27:51.499466",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 24.7% is 2.6x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:28:03.538161",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 23.7% is 2.5x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:28:09.549486",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.2% is 2.3x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:28:15.559941",
+        "type": "new_process",
+        "process": "kworker/u8:2-ext4-rsv-conversion",
+        "reason": "New process 'kworker/u8:2-ext4-rsv-conversion' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:28:15.559941",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 21.8% is 2.3x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:28:33.592990",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.1% is 2.3x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:28:39.603885",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 19.3% is 2.0x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:28:45.615789",
+        "type": "new_process",
+        "process": "kworker/3:3-events_power_efficient",
+        "reason": "New process 'kworker/3:3-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:28:57.637891",
+        "type": "new_process",
+        "process": "kworker/0:2-events_power_efficient",
+        "reason": "New process 'kworker/0:2-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:29:57.769619",
+        "type": "new_process",
+        "process": "kworker/u8:1-ext4-rsv-conversion",
+        "reason": "New process 'kworker/u8:1-ext4-rsv-conversion' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:29:57.769619",
+        "type": "new_process",
+        "process": "kworker/1:1-virtio_vsock",
+        "reason": "New process 'kworker/1:1-virtio_vsock' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:30:03.830979",
+        "type": "new_process",
+        "process": "kworker/1:1-cgroup_destroy",
+        "reason": "New process 'kworker/1:1-cgroup_destroy' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:30:03.830979",
+        "type": "new_process",
+        "process": "kworker/u8:3-ext4-rsv-conversion",
+        "reason": "New process 'kworker/u8:3-ext4-rsv-conversion' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:30:03.830979",
+        "type": "new_process",
+        "process": "kworker/1:2-events",
+        "reason": "New process 'kworker/1:2-events' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:30:09.844431",
+        "type": "new_process",
+        "process": "kworker/u8:3-flush-254:16",
+        "reason": "New process 'kworker/u8:3-flush-254:16' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:30:09.844431",
+        "type": "new_process",
+        "process": "kworker/1:2-mm_percpu_wq",
+        "reason": "New process 'kworker/1:2-mm_percpu_wq' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:30:09.844431",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 24.7% is 2.6x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:30:15.861056",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.5% is 2.3x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:30:57.958940",
+        "type": "new_process",
+        "process": "kworker/1:2-events_power_efficient",
+        "reason": "New process 'kworker/1:2-events_power_efficient' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:31:10.000359",
+        "type": "new_process",
+        "process": "kworker/u8:3-events_unbound",
+        "reason": "New process 'kworker/u8:3-events_unbound' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:31:16.031541",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 20.2% is 2.1x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:31:28.060126",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 23.5% is 2.5x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:31:34.075875",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 25.1% is 2.6x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:31:46.107885",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 23.1% is 2.4x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:32:10.175398",
+        "type": "new_process",
+        "process": "kworker/u8:3-writeback",
+        "reason": "New process 'kworker/u8:3-writeback' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:32:16.189861",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 23.3% is 2.4x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:32:22.208464",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 21.6% is 2.3x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:32:34.239741",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 21.1% is 2.2x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:33:04.338896",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 23.6% is 2.5x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:33:10.353440",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 25.9% is 2.7x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:33:16.370669",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 24.2% is 2.5x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:34:04.509980",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 45.2% is 4.7x the session average of 9.6%.",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T05:34:28.610717",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 20.4% is 2.1x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:34:34.627493",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 19.8% is 2.1x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:34:40.644460",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 24.9% is 2.6x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:34:46.666152",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.2% is 2.3x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:34:52.683771",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 26.5% is 2.8x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:35:34.806477",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.8% is 2.4x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:36:59.091249",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 20.1% is 2.1x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:37:41.272583",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 25.4% is 2.7x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:39:11.627570",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 25.6% is 2.7x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:39:17.649740",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 21.0% is 2.2x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:39:23.677306",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 35.9% is 3.7x the session average of 9.6%.",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T05:39:47.785865",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 19.2% is 2.0x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:40:23.923191",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 22.9% is 2.4x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:40:29.965547",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 23.1% is 2.4x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:40:54.078851",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 25.5% is 2.7x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:41:00.101316",
+        "type": "new_process",
+        "process": "head",
+        "reason": "New process 'head' detected during normal hours. This process was not observed in the baseline period.",
+        "risk": "low"
+    },
+    {
+        "timestamp": "2026-05-01T05:41:00.101316",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 26.6% is 2.8x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:41:06.135634",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 21.4% is 2.2x the session average of 9.6%.",
+        "risk": "medium"
+    },
+    {
+        "timestamp": "2026-05-01T05:41:12.160036",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 52.0% is 5.4x the session average of 9.6%.",
+        "risk": "high"
+    },
+    {
+        "timestamp": "2026-05-01T05:41:12.923883",
+        "type": "cpu_spike",
+        "process": "System Wide",
+        "reason": "CPU usage spike: 29.8% is 3.1x the session average of 9.6%.",
+        "risk": "high"
+    }
+]

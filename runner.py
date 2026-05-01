@@ -11,9 +11,8 @@ def main():
     interval = 12  # seconds between cycles
 
     # Path to scripts
-    # Scripts are in the collector/ directory
     collector_script = os.path.join("collector", "collector.py")
-    analyze_script = os.path.join("collector", "analyze.py")
+    analyze_script = os.path.join("backend", "analyzer.py")
 
     while True:
         try:
@@ -34,7 +33,7 @@ def main():
             # 2. Analyze data
             print("Analyzing data...")
             try:
-                # analyze.py runs once and exits
+                # analyzer.py runs once and exits
                 subprocess.run([sys.executable, analyze_script], check=True)
             except subprocess.CalledProcessError as e:
                 print(f"Error during analysis: {e}")

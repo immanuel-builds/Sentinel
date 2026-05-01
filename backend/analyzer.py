@@ -1,32 +1,28 @@
-import json
 import os
+import sys
 from datetime import datetime
+
+# Path adjustment for when running as a standalone script
+if __name__ == "__main__":
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from backend.utils import load_json, save_json
+else:
+    from .utils import load_json, save_json
 
 def analyze():
     """
     Reads activity_log.json, builds a behavioral baseline,
     and detects anomalies based on process novelty, active hours, and CPU usage.
     """
-    input_file = 'activity_log.json'
-    output_file = 'anomalies.json'
+    data_dir = "data"
+    input_file = os.path.join(data_dir, 'activity_log.json')
+    output_file = os.path.join(data_dir, 'anomalies.json')
 
     # 1. Read the file "activity_log.json"
-    if not os.path.exists(input_file):
-        with open(output_file, 'w') as f:
-            json.dump([], f, indent=4)
-        return
-
-    try:
-        with open(input_file, 'r') as f:
-            data = json.load(f)
-    except (json.JSONDecodeError, IOError):
-        with open(output_file, 'w') as f:
-            json.dump([], f, indent=4)
-        return
+    data = load_json(input_file, [])
 
     if not isinstance(data, list) or not data:
-        with open(output_file, 'w') as f:
-            json.dump([], f, indent=4)
+        save_json(output_file, [])
         return
 
     # Sort entries by timestamp to ensure chronological analysis
@@ -36,8 +32,6 @@ def analyze():
         pass
 
     # 2. Build a baseline
-    # Use up to the first 10 entries or 50% of the data (whichever is smaller)
-    # as the "typical" baseline for hours.
     baseline_size = min(10, max(1, len(data) // 2))
     baseline_sample = data[:baseline_size]
 
@@ -93,11 +87,8 @@ def analyze():
 
         # B. Time Anomaly
         if not is_normal_hour:
-            # Slightly outside: within 2 hours of baseline
-            # Far outside: more than 2 hours away
             dist_min = abs(current_hour - min_active_hour)
             dist_max = abs(current_hour - max_active_hour)
-            # Handle wraparound (simplified)
             distance = min(dist_min, dist_max, 24 - dist_min, 24 - dist_max)
 
             if distance > 2:
@@ -116,7 +107,7 @@ def analyze():
             })
 
         # C. CPU Spike Detection
-        if cpu > avg_cpu * 2 and cpu > 5: # Threshold to avoid spikes on very low idle averages
+        if cpu > avg_cpu * 2 and cpu > 5:
             multiplier = cpu / avg_cpu if avg_cpu > 0 else 0
             if multiplier >= 3:
                 risk = "high"
@@ -132,8 +123,7 @@ def analyze():
             })
 
     # 4. Output: Write all detected anomalies to a file named "anomalies.json"
-    with open(output_file, 'w') as f:
-        json.dump(anomalies, f, indent=4)
+    save_json(output_file, anomalies)
 
 if __name__ == "__main__":
     analyze()

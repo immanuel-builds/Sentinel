@@ -4,78 +4,72 @@
 
 Sentinel is a lightweight cybersecurity-focused web application that monitors device behavior and detects anomalies based on deviations from normal usage patterns.
 
-This project focuses on behavior analysis (not malware signatures), inspired by UEBA (User & Entity Behavior Analytics) systems.
-
----
-
-## Current Status
-
-🚧 In Development (Phase: UI + Data Collection)
-
-* [x] Static dashboard UI
-* [ ] Data collector (in progress)
-* [ ] Backend API
-* [ ] Anomaly detection engine
-
----
-
-## Features (Planned)
-
-* Track system behavior (process usage, activity patterns)
-* Detect anomalies (new processes, unusual activity times)
-* Visual dashboard with logs and alerts
-* Basic reporting system
-
 ---
 
 ## Project Structure
 
 sentinel/
-├── frontend/        # UI (HTML, CSS, JS)
-├── collector/       # Python data collection script
-├── data/            # Future processed data
+│
+├── frontend/        # User Interface
+│   ├── index.html   # Main dashboard
+│   ├── style.css    # Dashboard styling
+│   └── script.js    # Data fetching & UI logic
+│
+├── backend/         # Logic & API
+│   ├── main.py      # FastAPI application
+│   ├── analyzer.py  # Anomaly detection logic
+│   └── utils.py     # Shared JSON utilities
+│
+├── collector/       # Data Collection
+│   └── collector.py # System activity logger
+│
+├── data/            # Local Storage
+│   ├── activity_log.json
+│   └── anomalies.json
+│
+├── runner.py        # Pipeline automation
 └── README.md
 
 ---
 
 ## How to Run
 
-### 1. Frontend
+### 1. Install Dependencies
 
-Open:
-frontend/index.html
+```bash
+pip install psutil fastapi uvicorn
+```
+
+### 2. Start the Backend API
+
+```bash
+uvicorn backend.main:app --reload
+```
+
+### 3. Run the Automation Pipeline
+
+This script runs the collector and analyzer in a continuous loop.
+
+```bash
+python runner.py
+```
+
+### 4. Open the Dashboard
+
+Open `frontend/index.html` in your browser.
 
 ---
 
-### 2. Collector (in progress)
+## Folder Explanations
 
-Will log system activity locally using Python.
-
-Dependencies:
-pip install psutil
-
-Run:
-python collector/collector.py
-
----
-
-## Notes
-
-* This system detects behavioral anomalies, not malware directly
-* Current version uses static/mock data in UI
-* Backend and real-time integration will be added next
-
----
-
-## Next Steps
-
-* Build and run data collector
-* Store logs in structured format
-* Implement basic anomaly detection rules
-* Connect frontend to backend
+- **frontend/**: The user interface built with vanilla HTML/CSS/JS. Automatically refreshes every 7 seconds.
+- **backend/**: Contains the FastAPI server, the analysis engine, and common utilities.
+- **collector/**: Scripts to gather raw system activity like running processes and CPU usage.
+- **data/**: Central storage for logs and detected anomalies in JSON format.
+- **runner.py**: The orchestrator that automates the data collection and analysis lifecycle.
 
 ---
 
 ## Author
 
-Immanuel
+Sentinel Team
