@@ -16,7 +16,8 @@ def load_json(file_path: str, default_value: Any = None) -> Any:
             if not content:
                 return default_value
             return json.loads(content)
-    except (json.JSONDecodeError, IOError):
+    except Exception:
+        # Fallback for corrupted JSON, empty files, or IO issues
         return default_value
 
 def save_json(file_path: str, data: Any) -> bool:

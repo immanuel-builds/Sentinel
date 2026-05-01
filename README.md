@@ -91,3 +91,10 @@ frontend/index.html
 - **Rule-Based Heuristics**: Detection is based on fixed rules (CPU limits, time ranges) and lacks advanced machine learning or behavioral modeling.
 - **Interval-Based**: The system captures snapshots of activity rather than high-frequency real-time event streaming.
 - **Local Scope**: Monitoring is restricted to process execution and CPU utilization; it does not perform deep network packet inspection or file integrity monitoring.
+
+## System Robustness
+Sentinel is designed to be fault-tolerant and production-safe:
+- **Graceful Degradation**: If the Machine Learning or Statistical layers fail (due to insufficient data or environment issues), the system automatically falls back to reliable Rule-Based detection.
+- **Safe Data Handling**: JSON utilities include exception handling for missing, empty, or corrupted files, returning safe defaults instead of crashing.
+- **Atomic Writes**: Activity logs and anomalies are written using temporary files to prevent data corruption during simultaneous read/write cycles.
+- **Continuous Execution**: The automated pipeline includes error handling at each stage, ensuring the monitoring loop continues even if individual scripts encounter intermittent issues.
