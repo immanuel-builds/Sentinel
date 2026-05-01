@@ -5,7 +5,7 @@ from datetime import datetime
 def analyze():
     """
     Reads activity_log.json, builds a behavioral baseline,
-    and detects anomalies based on process novelty and active hours.
+    and detects anomalies based on process novelty, active hours, and CPU usage.
     """
     input_file = 'activity_log.json'
     output_file = 'anomalies.json'
@@ -36,12 +36,8 @@ def analyze():
         pass
 
     # 2. Build a baseline
-    # To detect anomalies in the same file, we use the first portion of the log
-    # to establish the "typical" active hours. Otherwise, if we used all data,
-    # no hour would ever be "outside" the range.
-
-    # We'll use up to the first 10 entries or 50% of the data (whichever is smaller)
-    # as the "typical" baseline for hours, ensuring at least one entry if possible.
+    # Use up to the first 10 entries or 50% of the data (whichever is smaller)
+    # as the "typical" baseline for hours.
     baseline_size = min(10, max(1, len(data) // 2))
     baseline_sample = data[:baseline_size]
 
@@ -61,6 +57,10 @@ def analyze():
     else:
         min_active_hour, max_active_hour = 0, 23
 
+    # Calculate global average CPU usage
+    all_cpu = [entry.get('cpu', 0) for entry in data if isinstance(entry.get('cpu'), (int, float))]
+    avg_cpu = sum(all_cpu) / len(all_cpu) if all_cpu else 0
+
     # 3. Detect anomalies
     anomalies = []
     processes_seen_so_far = set()
@@ -68,6 +68,7 @@ def analyze():
     for entry in data:
         timestamp = entry.get('timestamp')
         processes = entry.get('processes', [])
+        cpu = entry.get('cpu', 0)
 
         try:
             dt = datetime.fromisoformat(timestamp)
@@ -76,28 +77,58 @@ def analyze():
             continue
 
         # A. New Process Anomaly
-        # Flag if a process appears that was not seen in EARLIER entries.
+        is_normal_hour = min_active_hour <= current_hour <= max_active_hour
         for proc in processes:
-            if proc not in processes_seen_so_far:
+            if proc and proc not in processes_seen_so_far:
+                risk = "low" if is_normal_hour else "medium"
+                hour_context = "during normal hours" if is_normal_hour else f"outside normal hours ({min_active_hour}-{max_active_hour})"
                 anomalies.append({
                     "timestamp": timestamp,
                     "type": "new_process",
                     "process": proc,
-                    "reason": f"Process '{proc}' was not observed in any earlier log entries.",
-                    "risk": "medium"
+                    "reason": f"New process '{proc}' detected {hour_context}. This process was not observed in the baseline period.",
+                    "risk": risk
                 })
-                # Update seen set sequentially
                 processes_seen_so_far.add(proc)
 
         # B. Time Anomaly
-        # Flag if an event occurs outside the typical active hour range.
-        if current_hour < min_active_hour or current_hour > max_active_hour:
+        if not is_normal_hour:
+            # Slightly outside: within 2 hours of baseline
+            # Far outside: more than 2 hours away
+            dist_min = abs(current_hour - min_active_hour)
+            dist_max = abs(current_hour - max_active_hour)
+            # Handle wraparound (simplified)
+            distance = min(dist_min, dist_max, 24 - dist_min, 24 - dist_max)
+
+            if distance > 2:
+                risk = "high"
+                severity = "significant"
+            else:
+                risk = "medium"
+                severity = "slight"
+
             anomalies.append({
                 "timestamp": timestamp,
                 "type": "time_anomaly",
                 "process": None,
-                "reason": f"Event occurred at hour {current_hour}, which is outside the typical range ({min_active_hour}-{max_active_hour}).",
-                "risk": "high"
+                "reason": f"{severity.capitalize()} time deviation: Activity at hour {current_hour} is outside the typical {min_active_hour}-{max_active_hour} range.",
+                "risk": risk
+            })
+
+        # C. CPU Spike Detection
+        if cpu > avg_cpu * 2 and cpu > 5: # Threshold to avoid spikes on very low idle averages
+            multiplier = cpu / avg_cpu if avg_cpu > 0 else 0
+            if multiplier >= 3:
+                risk = "high"
+            else:
+                risk = "medium"
+
+            anomalies.append({
+                "timestamp": timestamp,
+                "type": "cpu_spike",
+                "process": "System Wide",
+                "reason": f"CPU usage spike: {cpu:.1f}% is {multiplier:.1f}x the session average of {avg_cpu:.1f}%.",
+                "risk": risk
             })
 
     # 4. Output: Write all detected anomalies to a file named "anomalies.json"
